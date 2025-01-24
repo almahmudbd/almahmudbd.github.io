@@ -11,34 +11,30 @@ This website is currently under development, with lots of changes planned in the
 
 Here is a selection of the most popular articles:
 
-* [Where Do I Start?](/posts/where-do-i-start)
+* [Where Do I Start?](/posts/where-do-i-start.md)
 
-* [7 Day Ruqyah Detox Programme - Shaykh 'Adil ibn Tahir al-Muqbil](/7dayrd)
+* [7 Day Ruqyah Detox Programme - Shaykh 'Adil ibn Tahir al-Muqbil](/7dayrd.md)
 
-* [Ruqyah Programme for Patients](/programme)
+* [Ruqyah Programme for Patients](/programme.md)
 
-* [Simple Things to Protect Yourself from the Shaytaan](/protectys)
+* [Simple Things to Protect Yourself from the Shaytaan](/protectys.md)
 
-* [Ruqyah Audio](/audio)
+* [Ruqyah Audio](/audio.md)
 
-* [A Response to Those Who Defend Ta'weez](/taweez)
+* [A Response to Those Who Defend Ta'weez](/taweez.md)
 
-* [Dealing with Waswasah](/waswasah)
+* [Dealing with Waswasah](/waswasah.md)
 
-* [An Advice to Those Suffering from Sickness and Black Magic](/anadvice)
+* [An Advice to Those Suffering from Sickness and Black Magic](/anadvice.md)
 
-Please also check out the [notes section](http://notes.muhammadtim.com), currently in development.
+Please also check out the [notes section](/notes.md), currently in development.
 
-There's also a selection of [video lectures](/video), and you can [contact me](/contact).
+There's also a selection of [video lectures](/video.md), and you can [contact me](/contact).
 
-Finally, here is a selection of the last few blog posts, see the full [blog](/blog) for more:
+Finally, here is a selection of the last few blog posts, see the full [blog](/blog.md) for more:
 
 <ul data-lift="blog.posts?max=3" style="list-style-type: none;">
-    <li data-post="item">
-        <h2><a data-post="link" href="#">Blog Post</a></h2>
-        <h4><span data-post="date">2012/12/14</span></h4>
-        <div data-post="shortcontent">Post Content goes here</div>
-        <div data-post="more"><a href="#">Read More...</a></div>
+        <h2><a data-post="link" href="/blog.md">Blog Post</a></h2>
+
 				<hr/>
-    </li>
 </ul>
