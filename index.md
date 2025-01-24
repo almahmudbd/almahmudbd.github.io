@@ -35,6 +35,4 @@ Finally, here is a selection of the last few blog posts, see the full [blog](/bl
 
 <ul data-lift="blog.posts?max=3" style="list-style-type: none;">
         <h2><a data-post="link" href="/blog.md">Blog Post</a></h2>
-
-				<hr/>
-</ul>
+<hr/>
