@@ -1,0 +1,14 @@
+title: "mtim.ruqyahbd.org"
+description: "Muhammad Tim Humble's Ruqyah Notes & Lectures Archive"
+baseurl: ""        # leave blank for user/organization site
+url: "https://almahmudbd.github.io"
+theme: minima
+
+# Optional settings you can customize:
+# author: "Muhammad Tim Humble"
+# plugins:
+#   - jekyll-feed
+
+markdown: kramdown
+kramdown:
+  input: GFM
