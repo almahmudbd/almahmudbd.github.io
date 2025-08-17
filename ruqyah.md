@@ -2,6 +2,10 @@
 [menu: Information for Patients]:/
 [menu-locgroup: ruqyah]:/
 [order: 1]:/
+---
+title: "আমার সম্পর্কে"
+permalink: /about/
+---
 
 #Information for Ruqyah Patients
 
