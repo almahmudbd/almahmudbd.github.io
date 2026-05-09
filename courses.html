@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>রুকইয়াহ কোর্স — almahmud</title>
+  <meta name="description" content="IOM-এর সাথে রুকইয়াহ শারইয়াহ কোর্স। সিলেবাস, FAQ ও রেজিস্ট্রেশনের তথ্য।">
+  <link rel="canonical" href="https://almahmud.pro.bd/courses">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+  <style>
+    .course-card { background: var(--color-bg); border: 0.5px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; }
+    .course-card.featured { border: 1.5px solid var(--color-border-info); }
+    .course-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: .75rem; }
+    .course-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+    .course-title { font-size: 17px; font-weight: 500; margin-bottom: .3rem; }
+    .course-desc { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1rem; }
+    .course-meta { display: flex; gap: 1.25rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .meta-item { font-size: 12px; color: var(--color-text-tertiary); display: flex; align-items: center; gap: 4px; }
+    .course-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn-p { font-size: 13px; padding: 7px 16px; border-radius: var(--radius-md); background: var(--color-text-primary); color: var(--color-bg); border: none; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+    .btn-p:hover { opacity: .82; }
+    .btn-s { font-size: 13px; padding: 7px 16px; border-radius: var(--radius-md); background: transparent; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-mid); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+    .btn-s:hover { background: var(--color-bg-secondary); }
+    .syllabus-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 10px; margin-bottom: 1.5rem; }
+    .syllabus-item { background: var(--color-bg-secondary); border-radius: var(--radius-md); padding: .9rem 1rem; font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; }
+    .syllabus-item strong { display: block; font-size: 12px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: .06em; margin-bottom: .3rem; }
+    .faq-item { padding: 1rem 0; border-bottom: 0.5px solid var(--color-border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 14px; font-weight: 500; margin-bottom: .35rem; }
+    .faq-a { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+    .cta-box { background: var(--color-bg-secondary); border-radius: var(--radius-lg); padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    .cta-title { font-size: 16px; font-weight: 500; margin-bottom: .25rem; }
+    .cta-text { font-size: 14px; color: var(--color-text-secondary); }
+  </style>
+</head>
+<body>
+<header class="nav" role="banner">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">almahmud</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="মেনু" aria-expanded="false"><i class="ti ti-menu-2" aria-hidden="true"></i></button>
+    <nav aria-label="প্রধান নেভিগেশন">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/books">বই</a></li>
+        <li><a href="/blog">ব্লগ</a></li>
+        <li><a href="/courses" class="active">কোর্স</a></li>
+        <li><a href="/consulting">কনসালটেন্সি</a></li>
+        <li><a href="/projects">প্রজেক্ট</a></li>
+        <li><a href="/ruqyah">রুকইয়াহ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <p class="page-tag">শিক্ষামূলক কার্যক্রম</p>
+    <h1 class="page-heading">রুকইয়াহ শারইয়াহ কোর্স</h1>
+    <p class="page-sub">Islamic Online Madrasah (IOM)-এর সাথে নিয়মিত রুকইয়াহ শারইয়াহ কোর্স পরিচালনা করা হয়। একদম প্রাথমিক স্তর থেকে ব্যবহারিক ও তাত্ত্বিক বিষয়গুলো পাঠদান করা হয়।</p>
+
+    <div class="course-card featured">
+      <div class="course-top">
+        <div class="course-badges">
+          <span class="badge badge-live">লাইভ ব্যাচ</span>
+          <span class="badge badge-popular">জনপ্রিয়</span>
+        </div>
+      </div>
+      <div class="course-title">রুকইয়াহ শারইয়াহ কোর্স — IOM</div>
+      <p class="course-desc">প্রাপ্তবয়স্ক প্রত্যেক মুসলিম নারী-পুরুষের জন্য উপকারী। কোর্সের মূল উদ্দেশ্য — রুকইয়াহ শারইয়াহর প্রয়োজনীয় ইলম সকলের মাঝে ছড়িয়ে দেয়া, যাতে প্রত্যেকে নিজের বা পরিবারের প্রয়োজনে রুকইয়াহ করতে পারে।</p>
+      <div class="course-meta">
+        <span class="meta-item"><i class="ti ti-clock" aria-hidden="true"></i> ১৫–২৫টি দরস</span>
+        <span class="meta-item"><i class="ti ti-calendar" aria-hidden="true"></i> সপ্তাহে ২–৩ দিন</span>
+        <span class="meta-item"><i class="ti ti-video" aria-hidden="true"></i> অনলাইন লাইভ (Zoom)</span>
+        <span class="meta-item"><i class="ti ti-users" aria-hidden="true"></i> নারী-পুরুষ উভয়ের জন্য</span>
+      </div>
+      <div class="course-actions">
+        <a href="https://facebook.com/iomedu.org" target="_blank" rel="noopener" class="btn-p"><i class="ti ti-external-link" aria-hidden="true"></i> IOM পেজে রেজিস্ট্রেশন</a>
+        <a href="https://www.facebook.com/groups/714927338694588/" target="_blank" rel="noopener" class="btn-s">রুকইয়াহ গ্রুপে আপডেট</a>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <p class="section-label">সিলেবাস</p>
+    <div class="syllabus-grid">
+      <div class="syllabus-item"><strong>অধ্যায় ১</strong>রুকইয়াহ শারইয়াহ পরিচিতি, গুরুত্ব ও ফজিলত, সাপ্লিমেন্ট ও করণীয়</div>
+      <div class="syllabus-item"><strong>অধ্যায় ২</strong>বদনজর — জিন ও মানুষের নজর</div>
+      <div class="syllabus-item"><strong>অধ্যায় ৩</strong>ওয়াসওয়াসা রোগ</div>
+      <div class="syllabus-item"><strong>অধ্যায় ৪</strong>জিনের আসর — লক্ষণ, রোগ নির্ণয় ও চিকিৎসা</div>
+      <div class="syllabus-item"><strong>অধ্যায় ৫</strong>জাদুটোনা ও তাবিজ-কবচ — ইসলামের দৃষ্টিভঙ্গি ও চিকিৎসা</div>
+      <div class="syllabus-item"><strong>অধ্যায় ৬</strong>শারীরিক ও মানসিক রোগব্যাধির জন্য রুকইয়াহ</div>
+      <div class="syllabus-item"><strong>অধ্যায় ৭</strong>পরিশিষ্ট — কমন পরামর্শ, জটিল কেস ও অভিজ্ঞতা</div>
+    </div>
+
+    <hr class="divider">
+
+    <p class="section-label">সাধারণ প্রশ্ন</p>
+    <div class="faq-item">
+      <div class="faq-q">সবাই কি কোর্সটি করতে পারবে?</div>
+      <div class="faq-a">হ্যাঁ, পারবে। আলেম হওয়া বা আরবি জানা আবশ্যক না। দেশ-বিদেশের সব জায়গা থেকেই করা যাবে।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">মেয়েরাও কি কোর্সে রেজিস্ট্রেশন করতে পারবে?</div>
+      <div class="faq-a">হ্যাঁ, নারী-পুরুষ সবাই পারবে। পর্দার ব্যাপারে IOM-এর ম্যানেজমেন্ট টিম যথেষ্ট সতর্ক।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">কবে শুরু হয়? কোথায় আপডেট পাব?</div>
+      <div class="faq-a">প্রতিটি কোর্স শুরুর কয়েক সপ্তাহ আগে রেজিস্ট্রেশনের ঘোষণা দেওয়া হয়। <a href="https://facebook.com/iomedu.org" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">IOM পেজ</a>, <a href="https://facebook.com/groups/714927338694588/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">রুকইয়াহ সাপোর্ট গ্রুপ</a> ও <a href="https://www.facebook.com/almahmud1234/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">আমার ওয়ালে</a> চোখ রাখুন।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">ক্লাস মিস হলে কী করব?</div>
+      <div class="faq-a">প্রতিদিনের ক্লাস রেকর্ড করা থাকবে। পরে দেখে নিতে পারবেন। তবে লাইভ ক্লাস করলে সবচেয়ে বেশি ফায়দা।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">কোনো বই লাগবে?</div>
+      <div class="faq-a">আবশ্যক না, প্রয়োজনীয় নোট ও পিডিএফ দেওয়া হবে। তবে «রুকইয়াহ» বইটা থাকলে ক্লাসে সুবিধা হবে।</div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="cta-box">
+      <div>
+        <div class="cta-title">কোর্স নিয়ে জানতে চান?</div>
+        <p class="cta-text">IOM-এর হেল্পলাইন বা পেজে মেসেজ দিন।</p>
+      </div>
+      <a href="https://facebook.com/iomedu.org" target="_blank" rel="noopener" class="btn-s"><i class="ti ti-brand-facebook" aria-hidden="true"></i> IOM পেজে যান</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container" style="width:100%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+    <span class="footer-text">© ২০২৫ আব্দুল্লাহ আল মাহমুদ</span>
+    <div class="social-links">
+      <a href="https://www.facebook.com/almahmud1234" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+      <a href="https://youtube.com/c/thealmahmud" target="_blank" rel="noopener" aria-label="YouTube"><i class="ti ti-brand-youtube" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</footer>
+<script>
+  const t=document.getElementById('nav-toggle'),l=document.getElementById('nav-links');
+  t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+  document.addEventListener('click',(e)=>{if(!e.target.closest('.nav-inner'))l.classList.remove('open');});
+</script>
+</body>
+</html>

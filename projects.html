@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>প্রজেক্ট ও ব্যবসা — almahmud</title>
+  <meta name="description" content="আব্দুল্লাহ আল মাহমুদের ব্যবসায়িক উদ্যোগ ও প্রযুক্তি প্রজেক্ট।">
+  <link rel="canonical" href="https://almahmud.pro.bd/projects">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+  <style>
+    .project-card { background: var(--color-bg); border: 0.5px solid var(--color-border); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; }
+    .project-card.featured { border: 1.5px solid var(--color-border-info); }
+    .project-header { display: grid; grid-template-columns: 52px 1fr; gap: 1.25rem; align-items: start; margin-bottom: .9rem; }
+    .project-logo { width:52px;height:52px;border-radius:var(--radius-md);background:var(--color-bg-secondary);border:0.5px solid var(--color-border);display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--color-text-secondary);flex-shrink:0; }
+    .project-name { font-size:16px;font-weight:500;margin-bottom:.2rem; }
+    .project-cat { font-size:12px;color:var(--color-text-tertiary);margin-bottom:.3rem; }
+    .project-desc { font-size:13px;color:var(--color-text-secondary);line-height:1.65;margin-bottom:.9rem; }
+    .project-links { display:flex;gap:8px;flex-wrap:wrap; }
+    .btn-p { font-size:13px;padding:6px 14px;border-radius:var(--radius-md);background:var(--color-text-primary);color:var(--color-bg);border:none;text-decoration:none;display:inline-flex;align-items:center;gap:5px; }
+    .btn-p:hover{opacity:.82;}
+    .btn-s { font-size:13px;padding:6px 14px;border-radius:var(--radius-md);background:transparent;color:var(--color-text-secondary);border:0.5px solid var(--color-border-mid);text-decoration:none;display:inline-flex;align-items:center;gap:5px; }
+    .btn-s:hover{background:var(--color-bg-secondary);}
+  </style>
+</head>
+<body>
+<header class="nav" role="banner">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">almahmud</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="মেনু" aria-expanded="false"><i class="ti ti-menu-2" aria-hidden="true"></i></button>
+    <nav aria-label="প্রধান নেভিগেশন">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/books">বই</a></li>
+        <li><a href="/blog">ব্লগ</a></li>
+        <li><a href="/courses">কোর্স</a></li>
+        <li><a href="/consulting">কনসালটেন্সি</a></li>
+        <li><a href="/projects" class="active">প্রজেক্ট</a></li>
+        <li><a href="/ruqyah">রুকইয়াহ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <p class="page-tag">উদ্যোগ ও প্রযুক্তি</p>
+    <h1 class="page-heading">ব্যবসা ও প্রজেক্ট</h1>
+    <p class="page-sub">বিভিন্ন সামাজিক ও বাণিজ্যিক উদ্যোগ এবং প্রযুক্তি প্রজেক্টের ওভারভিউ।</p>
+
+    <p class="section-label">ব্যবসায়িক উদ্যোগ</p>
+
+    <div class="project-card">
+      <div class="project-header">
+        <div class="project-logo"><i class="ti ti-building-store" aria-hidden="true"></i></div>
+        <div>
+          <div class="project-name">Sukkar Shop</div>
+          <div class="project-cat">ই-কমার্স · হালাল পণ্য</div>
+          <div style="display:flex;gap:6px;margin-top:.3rem;flex-wrap:wrap">
+            <span class="badge badge-live">সক্রিয়</span>
+          </div>
+        </div>
+      </div>
+      <p class="project-desc">হালাল ও স্বাস্থ্যকর পণ্যের অনলাইন শপ। দেশীয় ও আমদানিকৃত নিরাপদ পণ্য একটি প্ল্যাটফর্মে পাওয়া যায়।</p>
+      <div class="project-links">
+        <a href="https://sukkarshop.com" target="_blank" rel="noopener" class="btn-p"><i class="ti ti-world" aria-hidden="true"></i> sukkarshop.com</a>
+        <a href="https://www.facebook.com/sukkar.shop" target="_blank" rel="noopener" class="btn-s"><i class="ti ti-brand-facebook" aria-hidden="true"></i> Facebook পেজ</a>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <p class="section-label">ডিজিটাল প্রজেক্ট</p>
+
+    <div class="project-card featured">
+      <div class="project-header">
+        <div class="project-logo"><i class="ti ti-heart-handshake" aria-hidden="true"></i></div>
+        <div>
+          <div class="project-name">RuqyahBD</div>
+          <div class="project-cat">ওয়েব প্ল্যাটফর্ম · কমিউনিটি</div>
+          <div style="display:flex;gap:6px;margin-top:.3rem;flex-wrap:wrap">
+            <span class="badge badge-live">সক্রিয়</span>
+            <span class="badge badge-popular">ফ্ল্যাগশিপ</span>
+          </div>
+        </div>
+      </div>
+      <p class="project-desc">রুকইয়াহ শারইয়াহ বিষয়ক সবচেয়ে বড় বাংলা প্ল্যাটফর্ম। ব্লগ, ফোরাম, রাকি-তালিকা, শপ ও শিক্ষামূলক কন্টেন্ট একটি জায়গায়।</p>
+      <div class="project-links">
+        <a href="https://ruqyahbd.org" target="_blank" rel="noopener" class="btn-p"><i class="ti ti-world" aria-hidden="true"></i> ruqyahbd.org</a>
+        <a href="https://ruqyahbd.org/shop" target="_blank" rel="noopener" class="btn-s">বইয়ের শপ</a>
+      </div>
+    </div>
+
+    <div class="project-card" style="margin-top:1rem">
+      <div class="project-header">
+        <div class="project-logo"><i class="ti ti-device-mobile" aria-hidden="true"></i></div>
+        <div>
+          <div class="project-name">Ruqyah Pro</div>
+          <div class="project-cat">মোবাইল অ্যাপ · Android · iOS · Windows</div>
+          <div style="display:flex;gap:6px;margin-top:.3rem;flex-wrap:wrap">
+            <span class="badge badge-live">পাবলিশড</span>
+          </div>
+        </div>
+      </div>
+      <p class="project-desc">রুকইয়াহর আয়াত ও দুআর Flutter-নির্মিত অ্যাপ। অফলাইন সাপোর্ট, অডিও রিসাইটেশন ও ডেইলি ট্র্যাকার সহ।</p>
+      <div class="project-links">
+        <a href="https://ruqyahbd.org" target="_blank" rel="noopener" class="btn-p"><i class="ti ti-download" aria-hidden="true"></i> ডাউনলোড</a>
+      </div>
+    </div>
+
+    <div class="project-card" style="margin-top:1rem;background:var(--color-bg-secondary);border-color:transparent">
+      <p class="text-sm font-medium" style="margin-bottom:.25rem">আরও প্রজেক্ট আসছে</p>
+      <p class="text-sm text-muted">কয়েকটি নতুন উদ্যোগ পরিকল্পনায় রয়েছে।</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container" style="width:100%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+    <span class="footer-text">© ২০২৫ আব্দুল্লাহ আল মাহমুদ</span>
+    <div class="social-links">
+      <a href="https://www.facebook.com/almahmud1234" target="_blank" rel="noopener" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+      <a href="https://youtube.com/c/thealmahmud" target="_blank" rel="noopener" aria-label="YouTube"><i class="ti ti-brand-youtube" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</footer>
+<script>
+  const t=document.getElementById('nav-toggle'),l=document.getElementById('nav-links');
+  t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+  document.addEventListener('click',(e)=>{if(!e.target.closest('.nav-inner'))l.classList.remove('open');});
+</script>
+</body>
+</html>

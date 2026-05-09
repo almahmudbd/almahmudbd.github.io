@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/fb",
@@ -13,11 +14,6 @@
     {
       "source": "/yt",
       "destination": "https://youtube.com/c/thealmahmud",
-      "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "destination": "https://thealmahmud.blogspot.com/$1",
       "permanent": false
     }
   ]

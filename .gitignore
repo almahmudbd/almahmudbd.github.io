@@ -1,0 +1,12 @@
+/.agent-mem
+/.agent
+/.brainsync
+/.cursor
+.mcp.json
+.windsurfrules
+/.vscode
+AGENT.md
+CLAUDE.md
+
+.agent-mem/
+dump/
