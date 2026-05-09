@@ -9,6 +9,12 @@
   <link rel="canonical" href="https://almahmud.pro.bd/courses">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
   <style>
     /* Unique to this page */
     .badge-brief {
@@ -23,14 +29,16 @@
   <header class="nav" role="banner">
     <div class="nav-inner">
       <a href="/" class="nav-logo">almahmud</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="ডার্ক মোড">
+        <i class="ti ti-moon"></i>
+      </button>
       <button class="nav-toggle" id="nav-toggle" aria-label="মেনু খুলুন" aria-expanded="false"><i class="ti ti-menu-2"
           aria-hidden="true"></i></button>
       <nav aria-label="প্রধান নেভিগেশন">
         <ul class="nav-links" id="nav-links">
           <li><a href="/books">বই</a></li>
           <li><a href="/blog">ব্লগ</a></li>
-          <li><a href="/courses" class="active">কোর্স</a></li>
-          <li><a href="/consulting">কনসালটেন্সি</a></li>
+
           <li><a href="/projects">প্রজেক্ট</a></li>
           <li><a href="/ruqyah">রুকইয়াহ</a></li>
         </ul>
@@ -62,7 +70,7 @@
           <div class="course-meta">
             <span class="meta-item"><i class="ti ti-clock" aria-hidden="true"></i> ১৫–২৫টি দরস</span>
             <span class="meta-item"><i class="ti ti-calendar" aria-hidden="true"></i> সপ্তাহে ২–৩ দিন</span>
-            <span class="meta-item"><i class="ti ti-video" aria-hidden="true"></i> অনলাইন লাইভ (Zoom)</span>
+            <span class="meta-item"><i class="ti ti-video" aria-hidden="true"></i> লাইভ ও রেকর্ডেড ক্লাস</span>
             <span class="meta-item"><i class="ti ti-users" aria-hidden="true"></i> নারী-পুরুষ উভয়ের জন্য</span>
           </div>
           <div class="course-actions">
@@ -89,6 +97,7 @@
           <div class="course-meta">
             <span class="meta-item"><i class="ti ti-clock" aria-hidden="true"></i> ৫–৭টি ক্লাস</span>
             <span class="meta-item"><i class="ti ti-calendar" aria-hidden="true"></i> ২ সপ্তাহের ব্যাচ</span>
+            <span class="meta-item"><i class="ti ti-users" aria-hidden="true"></i> নারী-পুরুষ উভয়ের জন্য</span>
           </div>
           <div class="course-actions">
             <a href="https://www.facebook.com/almahmud1234/" target="_blank" rel="noopener" class="btn-s"><i
@@ -107,7 +116,8 @@
             </div>
           </div>
           <div class="course-title">নুরুল কোরআন একাডেমী : রেকর্ডেড কোর্স</div>
-          <p class="course-desc">আমাদের প্রথম রেকর্ডেড কোর্সের কার্যক্রম শুরু হয়েছে। প্রথম পর্যায়ের সব ক্লাস রেকর্ড করা হলে ঘোষণা দেয়া হবে ইনশাআল্লাহ। আপডেট জানতে একাডেমীর ফেসবুক গ্রুপে যুক্ত থাকতে পারেন।</p>
+          <p class="course-desc">আমাদের প্রথম রেকর্ডেড কোর্সের কার্যক্রম শুরু হয়েছে। প্রথম পর্যায়ের সব ক্লাস রেকর্ড করা
+            হলে ঘোষণা দেয়া হবে ইনশাআল্লাহ। আপডেট জানতে একাডেমীর ফেসবুক গ্রুপে যুক্ত থাকতে পারেন।</p>
           <div class="course-actions">
             <a href="https://www.facebook.com/groups/1233317427050483" target="_blank" rel="noopener" class="btn-s">
               <i class="ti ti-users" aria-hidden="true"></i> একাডেমীর গ্রুপে যুক্ত হন
@@ -150,13 +160,24 @@
       <div class="faq-item">
         <div class="faq-q">ক্লাস মিস হলে কী করব?</div>
         <div class="faq-a">প্রতিদিনের ক্লাস রেকর্ড করা থাকবে। পরে দেখে নিতে পারবেন। তবে লাইভ ক্লাস করলে সবচেয়ে বেশি
-          ফায়দা।</div>
+          ফায়দা হবে।</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">কোনো বই লাগবে?</div>
+        <div class="faq-q">এজন্য কোনো বই লাগবে?</div>
         <div class="faq-a">«রুকইয়াহ» বইটি থাকলে ক্লাসে সুবিধা হবে। তবে আবশ্যক নয়। প্রয়োজনীয় নোট ও পিডিএফ ক্লাসে
           দেওয়া হবে।
         </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">আমার সমস্যা নিয়ে কথা বলা যাবে?</div>
+        <div class="faq-a">ক্লাসের সময় সীমিত হওয়ায় সাধারণত কারও ব্যক্তিগত সমস্যা নিয়ে আলোচনার সুযোগ থাকে না। তবে কখনও
+          কখনও এজন্য আলাদা কিউএ সেশন রাখা হয়।</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">কোর্সের পর আমি কি রুকইয়াহ করতে পারব?</div>
+        <div class="faq-a">হ্যাঁ, কোর্স শেষে আপনি নিজের বা পরিবারের জন্য রুকইয়াহ করতে পারবেন। তবে আপনি ব্যাপকভাবে
+          মানুষের রুকইয়াহ করতে চাইলে অভিজ্ঞদের তত্ত্বাবধানে কিছুদিন অনুশীলন করা উচিত। (এছাড়া রাক্বি হওয়ার জন্য
+          প্রয়োজনীয় গুণাবলি থাকা তো লাগবেই।)</div>
       </div>
     </div>
   </main>
@@ -168,9 +189,37 @@
     </div>
   </footer>
   <script>
-    const t = document.getElementById('nav-toggle'), l = document.getElementById('nav-links');
-    t.addEventListener('click', () => { const o = l.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
-    document.addEventListener('click', (e) => { if (!e.target.closest('.nav-inner')) l.classList.remove('open'); });
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open);
+    });
+
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateIcon(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      updateIcon(theme);
+    });
+
+    function updateIcon(theme) {
+      themeIcon.className = theme === 'dark' ? 'ti ti-sun' : 'ti ti-moon';
+    }
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-inner')) {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   </script>
 </body>
 

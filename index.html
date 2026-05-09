@@ -13,6 +13,12 @@
   <link rel="canonical" href="https://almahmud.pro.bd/">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 
 <body>
@@ -20,6 +26,9 @@
   <header class="nav" role="banner">
     <div class="nav-inner">
       <a href="/" class="nav-logo">almahmud</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="ডার্ক মোড">
+        <i class="ti ti-moon"></i>
+      </button>
       <button class="nav-toggle" id="nav-toggle" aria-label="মেনু খুলুন" aria-expanded="false">
         <i class="ti ti-menu-2" aria-hidden="true"></i>
       </button>
@@ -27,8 +36,7 @@
         <ul class="nav-links" id="nav-links">
           <li><a href="/books">বই</a></li>
           <li><a href="/blog">ব্লগ</a></li>
-          <li><a href="/courses">কোর্স</a></li>
-          <li><a href="/consulting">কনসালটেন্সি</a></li>
+
           <li><a href="/projects">প্রজেক্ট</a></li>
           <li><a href="/ruqyah">রুকইয়াহ</a></li>
         </ul>
@@ -142,14 +150,39 @@
   </footer>
 
   <script>
-    const toggle = document.getElementById('nav-toggle');
-    const links = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open);
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+
+    // Navigation Toggle
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open);
     });
+
+    // Theme Toggle
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateIcon(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      updateIcon(theme);
+    });
+
+    function updateIcon(theme) {
+      themeIcon.className = theme === 'dark' ? 'ti ti-sun' : 'ti ti-moon';
+    }
+
+    // Close menu on outside click
     document.addEventListener('click', (e) => {
-      if (!e.target.closest('.nav-inner')) links.classList.remove('open');
+      if (!e.target.closest('.nav-inner')) {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
     });
   </script>
 </body>

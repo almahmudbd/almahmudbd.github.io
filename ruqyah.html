@@ -9,6 +9,12 @@
   <link rel="canonical" href="https://almahmud.pro.bd/ruqyah">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 
 </head>
 
@@ -16,14 +22,15 @@
   <header class="nav" role="banner">
     <div class="nav-inner">
       <a href="/" class="nav-logo">almahmud</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="ডার্ক মোড">
+        <i class="ti ti-moon"></i>
+      </button>
       <button class="nav-toggle" id="nav-toggle" aria-label="মেনু খুলুন" aria-expanded="false"><i class="ti ti-menu-2"
           aria-hidden="true"></i></button>
       <nav aria-label="প্রধান নেভিগেশন">
         <ul class="nav-links" id="nav-links">
           <li><a href="/books">বই</a></li>
           <li><a href="/blog">ব্লগ</a></li>
-          <li><a href="/courses">কোর্স</a></li>
-          <li><a href="/consulting">কনসালটেন্সি</a></li>
           <li><a href="/projects">প্রজেক্ট</a></li>
           <li><a href="/ruqyah" class="active">রুকইয়াহ</a></li>
         </ul>
@@ -88,35 +95,35 @@
 
       <p class="section-label">রিসোর্স</p>
       <div class="resource-grid">
+        <a class="resource-card" href="https://ruqyahbd.org/posts" target="_blank" rel="noopener">
+          <div class="resource-icon"><i class="ti ti-list" aria-hidden="true"></i></div>
+          <div class="resource-name">সকল পোস্ট</div>
+          <p class="resource-desc">রুকইয়াহ বিষয়ক সকল পোস্ট এখানে পাবেন।</p>
+          <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> দেখুন</span>
+        </a>
         <a class="resource-card" href="https://amarbokbok.vercel.app/blogs/raqilist" target="_blank" rel="noopener">
           <div class="resource-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
           <div class="resource-name">রাকি ও সেন্টারের তালিকা</div>
           <p class="resource-desc">দেশের বিভিন্ন জেলায় রুকইয়াহ করেন এমন ব্যক্তি ও সেন্টারের তালিকা।</p>
           <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> দেখুন</span>
         </a>
-        <a class="resource-card" href="https://ruqyahbd.org/shop" target="_blank" rel="noopener">
-          <div class="resource-icon"><i class="ti ti-shopping-bag" aria-hidden="true"></i></div>
-          <div class="resource-name">বইয়ের শপ</div>
-          <p class="resource-desc">রুকইয়াহ বিষয়ক বই সংগ্রহের সহজ উপায়।</p>
-          <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> শপে যান</span>
-        </a>
         <a class="resource-card" href="/books" rel="noopener">
           <div class="resource-icon"><i class="ti ti-book-2" aria-hidden="true"></i></div>
-          <div class="resource-name">আমার বই</div>
+          <div class="resource-name">রুকইয়াহ বিষয়ক বই</div>
           <p class="resource-desc">রুকইয়াহ, রুকইয়ার আয়াত ও দুআ, মুখতাসার রুকইয়াহ।</p>
-          <span class="resource-link"><i class="ti ti-arrow-right" aria-hidden="true"></i> বিস্তারিত</span>
-        </a>
-        <a class="resource-card" href="/courses" rel="noopener">
-          <div class="resource-icon"><i class="ti ti-school" aria-hidden="true"></i></div>
-          <div class="resource-name">রুকইয়াহ কোর্স</div>
-          <p class="resource-desc">অনলাইন রুকইয়াহ শারইয়াহ কোর্স।</p>
           <span class="resource-link"><i class="ti ti-arrow-right" aria-hidden="true"></i> দেখুন</span>
+        </a>
+        <a class="resource-card" href="https://ruqyahbd.org/apps" rel="noopener">
+          <div class="resource-icon"><i class="ti ti-mobile" aria-hidden="true"></i></div>
+          <div class="resource-name">রুকইয়াহ অ্যাপস</div>
+          <p class="resource-desc">মোবাইল ও পিসির জন্য রুকইয়াহ বিষয়ক প্রয়োজনীয় অ্যাপস।</p>
+          <span class="resource-link"><i class="ti ti-arrow-right" aria-hidden="true"></i> ডাউনলোড করুন</span>
         </a>
         <a class="resource-card" href="https://ruqyahbd.org/networks" target="_blank" rel="noopener">
           <div class="resource-icon"><i class="ti ti-binary" aria-hidden="true"></i></div>
           <div class="resource-name">সকল প্রজেক্ট</div>
-          <p class="resource-desc">রুকইয়াহ বিষয়ক সকল টেক প্রজেক্ট ও নেটওয়ার্ক।</p>
-          <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> বিস্তারিত</span>
+          <p class="resource-desc">রুকইয়াহ গ্রুপের সকল প্রোফাইল ও প্রজেক্টের লিংক।</p>
+          <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> দেখুন</span>
         </a>
         <a class="resource-card" href="https://ruqyahbd.org/about" target="_blank" rel="noopener">
           <div class="resource-icon"><i class="ti ti-info-circle" aria-hidden="true"></i></div>
@@ -132,8 +139,8 @@
         <i class="ti ti-alert-triangle notice-icon" aria-hidden="true"></i>
         <div>
           <div class="notice-title">সতর্কতা</div>
-          <p class="notice-text">রুকইয়াহর নামে প্রচলিত কিছু পদ্ধতি ইসলামসম্মত নয়। রাকির সাথে যোগাযোগের আগে তার বিষয়ে
-            ভালোভাবে যাচাই করুন। তাবিজ, ঝাড়ফুঁক ও কবচ ব্যবহার না করা উত্তম।</p>
+          <p class="notice-text">রুকইয়াহর নামে প্রচলিত অনেক পদ্ধতি ইসলামসম্মত নয়। কোনো রাকির সাথে যোগাযোগের আগে তার
+            বিষয়ে ভালোভাবে যাচাই করুন। নিজে রুকইয়াহ বিষয়ে জানুন এরপর কথা বলুন।</p>
         </div>
       </div>
     </div>
@@ -146,9 +153,37 @@
     </div>
   </footer>
   <script>
-    const t = document.getElementById('nav-toggle'), l = document.getElementById('nav-links');
-    t.addEventListener('click', () => { const o = l.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
-    document.addEventListener('click', (e) => { if (!e.target.closest('.nav-inner')) l.classList.remove('open'); });
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open);
+    });
+
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateIcon(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      updateIcon(theme);
+    });
+
+    function updateIcon(theme) {
+      themeIcon.className = theme === 'dark' ? 'ti ti-sun' : 'ti ti-moon';
+    }
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-inner')) {
+        navLinks.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   </script>
 </body>
 
