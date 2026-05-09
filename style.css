@@ -117,6 +117,18 @@ html { font-size: 17px; scroll-behavior: smooth; }
   --color-border-success:     rgba(59, 109, 17, 0.2);
 }
 
+/* Dark mode: override hardcoded #ffffff card backgrounds */
+[data-theme="dark"] .card,
+[data-theme="dark"] .book-card-wrap,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .center-card,
+[data-theme="dark"] .link-card,
+[data-theme="dark"] .resource-card,
+[data-theme="dark"] .platform-card,
+[data-theme="dark"] .course-card {
+  background: #1e1e1e;
+}
+
 .theme-toggle {
   background: none;
   border: none;
@@ -285,16 +297,16 @@ img { display: block; max-width: 100%; }
 
 /* ─── Cards ──────────────────────────────────────────── */
 .card {
-  background: var(--color-bg);
-  border: 0.5px solid var(--color-border);
+  background: #ffffff;
+  border: 0.5px solid var(--color-border-mid);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-.card:hover { border-color: var(--color-border-mid); }
-.card.featured { border: 1.5px solid var(--color-border-info); }
-.card.muted { background: var(--color-bg-secondary); border-color: transparent; }
+.card:hover { border-color: var(--color-border-mid); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.card.featured { border: 1.5px solid var(--color-border-info); background: #ffffff; }
+.card.muted { background: var(--color-bg-secondary); border-color: var(--color-border); }
 
 .card-grid {
   display: grid;
@@ -501,7 +513,7 @@ img { display: block; max-width: 100%; }
   margin-bottom: 2rem;
 }
 
-.notice-icon { font-size: 20px; color: var(--color-text-tertiary); flex-shrink: 0; margin-top: 2px; }
+.notice-icon { font-size: 20px; color: var(--color-text-tertiary); flex-shrink: 0; margin-top: 1px; line-height: 1; }
 .notice-title { font-size: 14px; font-weight: 500; margin-bottom: 0.3rem; }
 .notice-text { font-size: 15px; color: var(--color-text-secondary); line-height: 1.65; }
 
@@ -650,15 +662,18 @@ img { display: block; max-width: 100%; }
 
 /* ─── Course Card ────────────────────────────────────── */
 .course-card {
-  background: var(--color-bg);
-  border: 0.5px solid var(--color-border);
+  background: #ffffff;
+  border: 0.5px solid var(--color-border-mid);
   border-radius: var(--radius-lg);
   padding: 0;
   margin-bottom: 1.5rem;
   overflow: hidden;
   display: flex;
   align-items: stretch;
+  transition: box-shadow 0.15s;
 }
+
+.course-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 
 .course-card.featured {
   border: 1.5px solid var(--color-border-info);
@@ -751,12 +766,15 @@ img { display: block; max-width: 100%; }
 
 /* ─── Project Card ───────────────────────────────────── */
 .project-card {
-  background: var(--color-bg);
-  border: 0.5px solid var(--color-border);
+  background: #ffffff;
+  border: 0.5px solid var(--color-border-mid);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   margin-bottom: 1rem;
+  transition: box-shadow 0.15s;
 }
+
+.project-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 
 .project-card.featured {
   border: 1.5px solid var(--color-border-info);
@@ -811,8 +829,8 @@ img { display: block; max-width: 100%; }
 
 /* ─── Consulting/Center Card ─────────────────────────── */
 .center-card {
-  background: var(--color-bg);
-  border: 0.5px solid var(--color-border);
+  background: #ffffff;
+  border: 0.5px solid var(--color-border-mid);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   margin-bottom: 1rem;
@@ -820,12 +838,15 @@ img { display: block; max-width: 100%; }
   grid-template-columns: 52px 1fr;
   gap: 1.25rem;
   align-items: start;
+  transition: box-shadow 0.15s;
 }
+
+.center-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 
 /* ─── Book Card ──────────────────────────────────────── */
 .book-card-wrap {
-  background: var(--color-bg);
-  border: 0.5px solid var(--color-border);
+  background: #ffffff;
+  border: 0.5px solid var(--color-border-mid);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   margin-bottom: 1rem;
@@ -833,7 +854,10 @@ img { display: block; max-width: 100%; }
   grid-template-columns: 100px 1fr;
   gap: 1.5rem;
   align-items: start;
+  transition: box-shadow 0.15s;
 }
+
+.book-card-wrap:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 
 .book-cover-box {
   width: 100px;
@@ -873,8 +897,8 @@ img { display: block; max-width: 100%; }
 
 /* ─── Link/Resource Card ─────────────────────────────── */
 .link-card {
-  background: var(--color-bg);
-  border: 0.5px solid var(--color-border);
+  background: #ffffff;
+  border: 0.5px solid var(--color-border-mid);
   border-radius: var(--radius-lg);
   padding: 1.25rem 1.5rem;
   margin-bottom: .75rem;
@@ -883,10 +907,10 @@ img { display: block; max-width: 100%; }
   justify-content: space-between;
   gap: 1rem;
   text-decoration: none;
-  transition: border-color .15s;
+  transition: border-color .15s, box-shadow 0.15s;
 }
 
-.link-card:hover { border-color: var(--color-border-mid); }
+.link-card:hover { border-color: var(--color-border-mid); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 
 .resource-grid {
   display: grid;
@@ -895,23 +919,23 @@ img { display: block; max-width: 100%; }
 }
 
 .resource-card {
-  background: var(--color-bg);
-  border: 0.5px solid var(--color-border);
+  background: #ffffff;
+  border: 0.5px solid var(--color-border-mid);
   border-radius: var(--radius-lg);
   padding: 1.25rem;
   text-decoration: none;
   display: flex;
   gap: 1.15rem;
   align-items: flex-start;
-  transition: border-color .15s;
+  transition: border-color .15s, box-shadow 0.15s;
 }
 
-.resource-icon { font-size: 22px; color: var(--color-text-secondary); flex-shrink: 0; margin-top: 2px; }
+.resource-icon { font-size: 20px; color: var(--color-text-secondary); flex-shrink: 0; margin-top: 1px; line-height: 1; }
 .resource-name { font-size: 15px; font-weight: 500; margin-bottom: .25rem; }
 .resource-desc { font-size: 14px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: .75rem; }
 .resource-link { font-size: 14px; color: var(--color-text-tertiary); display: flex; align-items: center; gap: 5px; }
 
-.resource-card:hover { border-color: var(--color-border-mid); }
+.resource-card:hover { border-color: var(--color-border-mid); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 
 /* ─── Grid/Layout Helpers ────────────────────────────── */
 .syllabus-grid {
@@ -989,20 +1013,20 @@ img { display: block; max-width: 100%; }
 }
 
 .platform-card {
-  background: var(--color-bg);
-  border: 0.5px solid var(--color-border);
+  background: #ffffff;
+  border: 0.5px solid var(--color-border-mid);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
   text-decoration: none;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-.platform-card:hover { border-color: var(--color-border-mid); }
+.platform-card:hover { border-color: var(--color-border-mid); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 
-.platform-icon { font-size: 22px; color: var(--color-text-secondary); flex-shrink: 0; margin-top: 2px; }
+.platform-icon { font-size: 20px; color: var(--color-text-secondary); flex-shrink: 0; margin-top: 1px; line-height: 1; }
 .platform-name { font-size: 15px; font-weight: 500; margin-bottom: .25rem; }
 .platform-handle { font-size: 12px; color: var(--color-text-tertiary); margin-bottom: .65rem; }
 .platform-desc { font-size: 15px; color: var(--color-text-secondary); line-height: 1.55; margin-bottom: .9rem; }
@@ -1025,7 +1049,7 @@ img { display: block; max-width: 100%; }
   align-items: flex-start;
 }
 
-.activism-icon { font-size: 20px; color: var(--color-text-tertiary); flex-shrink: 0; margin-top: 2px; }
+.activism-icon { font-size: 20px; color: var(--color-text-tertiary); flex-shrink: 0; margin-top: 1px; line-height: 1; }
 .activism-platform { font-size: 14px; font-weight: 500; margin-bottom: 0.2rem; }
 .activism-stat { font-size: 12px; color: var(--color-text-tertiary); margin-bottom: 0.6rem; }
 .activism-desc { font-size: 15px; color: var(--color-text-secondary); line-height: 1.65; }
@@ -1087,4 +1111,5 @@ img { display: block; max-width: 100%; }
   .book-cover-box { width: 80px; height: 118px; }
   .center-card, .project-header { grid-template-columns: 1fr; gap: 1rem; }
   .cta-box, .online-box { flex-direction: column; align-items: flex-start; }
-}
+  }
+                
