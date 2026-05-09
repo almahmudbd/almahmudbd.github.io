@@ -466,8 +466,57 @@ img { display: block; max-width: 100%; }
 .footer-text { font-size: 13px; color: var(--color-text-tertiary); }
 
 .social-links { display: flex; gap: 1rem; }
-.social-links a { font-size: 18px; color: var(--color-text-tertiary); transition: color 0.15s; }
 .social-links a:hover { color: var(--color-text-secondary); }
+
+/* ─── Social Mini Grid (Common) ──────────────────────── */
+.social-mini-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.social-mini-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--color-bg);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  transition: all 0.2s;
+}
+
+.social-mini-card:hover {
+  border-color: var(--color-border-mid);
+  background: var(--color-bg-secondary);
+}
+
+.social-mini-card i {
+  font-size: 16px;
+  color: var(--color-text-tertiary);
+}
+
+.btn-sm-s {
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-secondary);
+  border: 0.5px solid var(--color-border-mid);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.15s;
+}
+
+.btn-sm-s:hover {
+  background: var(--color-bg-secondary);
+}
 
 /* ─── Utility ────────────────────────────────────────── */
 .flex { display: flex; }
