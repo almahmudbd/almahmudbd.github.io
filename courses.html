@@ -10,178 +10,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
   <style>
-    .course-card {
-      background: var(--color-bg);
-      border: 0.5px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 0;
-      margin-bottom: 1.5rem;
-      overflow: hidden;
-    }
-
-    .course-card.featured {
-      border: 1.5px solid var(--color-border-info);
-    }
-
-    .course-banner {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-bottom: 0.5px solid var(--color-border);
-    }
-
-    .course-content {
-      padding: 1.5rem;
-    }
-
-    .course-top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: .75rem;
-    }
-
-    .course-badges {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
-    .course-title {
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: .4rem;
-    }
-
-    .course-desc {
-      font-size: 15px;
-      color: var(--color-text-secondary);
-      line-height: 1.6;
-      margin-bottom: 1.25rem;
-    }
-
-    .course-meta {
-      display: flex;
-      gap: 1.25rem;
-      margin-bottom: 1.25rem;
-      flex-wrap: wrap;
-    }
-
-    .meta-item {
-      font-size: 13px;
-      color: var(--color-text-tertiary);
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .course-actions {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .btn-p {
-      font-size: 15px;
-      padding: 7px 16px;
-      border-radius: var(--radius-md);
-      background: var(--color-text-primary);
-      color: var(--color-bg);
-      border: none;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .btn-p:hover {
-      opacity: .82;
-    }
-
-    .btn-s {
-      font-size: 15px;
-      padding: 7px 16px;
-      border-radius: var(--radius-md);
-      background: transparent;
-      color: var(--color-text-secondary);
-      border: 0.5px solid var(--color-border-mid);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .btn-s:hover {
-      background: var(--color-bg-secondary);
-    }
-
-    .syllabus-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      margin-bottom: 1.5rem;
-    }
-
-    .syllabus-item {
-      background: var(--color-bg-secondary);
-      border-radius: var(--radius-md);
-      padding: .9rem 1rem;
-      font-size: 15px;
-      color: var(--color-text-secondary);
-      line-height: 1.5;
-    }
-
-    .syllabus-item strong {
-      display: block;
-      font-size: 12px;
-      color: var(--color-text-tertiary);
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      margin-bottom: .3rem;
-    }
-
-    .faq-item {
-      padding: 1.25rem 0;
-      border-bottom: 0.5px solid var(--color-border);
-    }
-
-    .faq-item:last-child {
-      border-bottom: none;
-    }
-
-    .faq-q {
-      font-size: 15px;
-      font-weight: 500;
-      margin-bottom: .5rem;
-    }
-
-    .faq-a {
-      font-size: 15px;
-      color: var(--color-text-secondary);
-      line-height: 1.6;
-    }
-
-    .cta-box {
-      background: var(--color-bg-secondary);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .cta-title {
-      font-size: 17px;
-      font-weight: 500;
-      margin-bottom: .3rem;
-    }
-
-    .cta-text {
-      font-size: 15px;
-      color: var(--color-text-secondary);
+    /* Unique to this page */
+    .badge-brief {
+      background: rgba(16, 185, 129, 0.1);
+      color: #10b981;
+      border-color: rgba(16, 185, 129, 0.2);
     }
   </style>
 </head>
@@ -264,9 +97,28 @@
         </div>
       </div>
 
+
+      <div class="course-card">
+        <img src="assets/recorded-course.png" alt="Recorded Course Banner" class="course-banner">
+        <div class="course-content">
+          <div class="course-top">
+            <div class="course-badges">
+              <span class="badge badge-new">রেকর্ডেড কোর্স</span>
+            </div>
+          </div>
+          <div class="course-title">নুরুল কোরআন একাডেমী : রেকর্ডেড কোর্স</div>
+          <p class="course-desc">আমাদের প্রথম রেকর্ডেড কোর্সের কার্যক্রম শুরু হয়েছে। প্রথম পর্যায়ের সব ক্লাস রেকর্ড করা হলে ঘোষণা দেয়া হবে ইনশাআল্লাহ। আপডেট জানতে একাডেমীর ফেসবুক গ্রুপে যুক্ত থাকতে পারেন।</p>
+          <div class="course-actions">
+            <a href="https://www.facebook.com/groups/1233317427050483" target="_blank" rel="noopener" class="btn-s">
+              <i class="ti ti-users" aria-hidden="true"></i> একাডেমীর গ্রুপে যুক্ত হন
+            </a>
+          </div>
+        </div>
+      </div>
+
       <hr class="divider">
 
-      <p class="section-label">সিলেবাস</p>
+      <p class="section-label">বিস্তারিত কোর্সের সিলেবাস</p>
       <div class="syllabus-grid">
         <div class="syllabus-item"><strong>অধ্যায় ১</strong>রুকইয়াহ শারইয়াহ পরিচিতি, গুরুত্ব, সাপ্লিমেন্টের ব্যবহার..
           ইত্যাদি</div>
@@ -292,7 +144,8 @@
       </div>
       <div class="faq-item">
         <div class="faq-q">কবে শুরু হয়? কোথায় আপডেট পাব?</div>
-        <div class="faq-a">প্রতিটি কোর্স শুরুর কয়েক সপ্তাহ আগে রেজিস্ট্রেশনের ঘোষণা দেওয়া হয়। এজন্য IOM পেজ, রুকইয়াহ সাপোর্ট গ্রুপ ও আমার ওয়ালে চোখ রাখতে পারেন।</div>
+        <div class="faq-a">প্রতিটি কোর্স শুরুর কয়েক সপ্তাহ আগে রেজিস্ট্রেশনের ঘোষণা দেওয়া হয়। এজন্য IOM পেজ, রুকইয়াহ
+          সাপোর্ট গ্রুপ ও আমার ওয়ালে চোখ রাখতে পারেন।</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">ক্লাস মিস হলে কী করব?</div>
@@ -310,7 +163,8 @@
 
   <footer class="footer">
     <div class="container" style="text-align:center">
-      <span class="footer-text">© <a href="https://www.facebook.com/almahmud1234" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">আব্দুল্লাহ আল মাহমুদ</a></span>
+      <span class="footer-text">© <a href="https://www.facebook.com/almahmud1234" target="_blank" rel="noopener"
+          style="color:inherit;text-decoration:none">আব্দুল্লাহ আল মাহমুদ</a></span>
     </div>
   </footer>
   <script>
