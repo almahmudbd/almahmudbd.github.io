@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
   <script>
-    (function() {
+    (function () {
       const theme = localStorage.getItem('theme') || 'light';
       document.documentElement.setAttribute('data-theme', theme);
     })();
@@ -43,6 +43,16 @@
       <h1 class="page-heading">রুকইয়াহ শারইয়াহ</h1>
       <p class="page-sub">রুকইয়াহ বিষয়ক কমিউনিটি, লেকচার ও রিসোর্স একটি জায়গায়। জিন, জাদু ও বদনজরের চিকিৎসা সম্পর্কে
         জানতে নিচের লিংকগুলো অনুসরণ করুন।</p>
+
+      <div class="cta-box"
+        style="margin: 1.5rem 0 2.5rem 0; background: var(--color-background-info); border: 0.5px solid var(--color-border-info);">
+        <div>
+          <div class="cta-title" style="color: var(--color-text-info);">এপয়েন্টমেন্টের অপশন খুঁজছেন?</div>
+          <p class="cta-text">রুকইয়াহ বা পরামর্শের জন্য এই লিংকের তথ্যগুলো দেখুন, এরপর জেনেবুঝে সিরিয়াল নিন।</p>
+        </div>
+        <a href="/consulting" class="btn-p" style="background: var(--color-text-info); color: white;">বিস্তারিত
+          দেখুন</a>
+      </div>
 
       <p class="section-label">কমিউনিটি</p>
 
@@ -96,39 +106,51 @@
       <div class="resource-grid">
         <a class="resource-card" href="https://ruqyahbd.org/posts" target="_blank" rel="noopener">
           <div class="resource-icon"><i class="ti ti-list" aria-hidden="true"></i></div>
-          <div class="resource-name">সকল পোস্ট</div>
-          <p class="resource-desc">রুকইয়াহ বিষয়ক সকল পোস্ট এখানে পাবেন।</p>
-          <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> দেখুন</span>
+          <div class="resource-content">
+            <div class="resource-name">সকল পোস্ট</div>
+            <p class="resource-desc">রুকইয়াহ বিষয়ক সকল পোস্ট এখানে পাবেন।</p>
+            <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> দেখুন</span>
+          </div>
         </a>
         <a class="resource-card" href="https://amarbokbok.vercel.app/blogs/raqilist" target="_blank" rel="noopener">
           <div class="resource-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
-          <div class="resource-name">রাকি ও সেন্টারের তালিকা</div>
-          <p class="resource-desc">দেশের বিভিন্ন জেলায় রুকইয়াহ করেন এমন ব্যক্তি ও সেন্টারের তালিকা।</p>
-          <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> দেখুন</span>
+          <div class="resource-content">
+            <div class="resource-name">রাকি ও সেন্টারের তালিকা</div>
+            <p class="resource-desc">দেশের বিভিন্ন জেলায় রুকইয়াহ করেন এমন ব্যক্তি ও সেন্টারের তালিকা।</p>
+            <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> দেখুন</span>
+          </div>
         </a>
         <a class="resource-card" href="/books" rel="noopener">
           <div class="resource-icon"><i class="ti ti-book-2" aria-hidden="true"></i></div>
-          <div class="resource-name">রুকইয়াহ বিষয়ক বই</div>
-          <p class="resource-desc">রুকইয়াহ, রুকইয়ার আয়াত ও দুআ, মুখতাসার রুকইয়াহ।</p>
-          <span class="resource-link"><i class="ti ti-arrow-right" aria-hidden="true"></i> দেখুন</span>
+          <div class="resource-content">
+            <div class="resource-name">রুকইয়াহ বিষয়ক বই</div>
+            <p class="resource-desc">রুকইয়াহ, রুকইয়ার আয়াত ও দুআ, মুখতাসার রুকইয়াহ।</p>
+            <span class="resource-link"><i class="ti ti-arrow-right" aria-hidden="true"></i> দেখুন</span>
+          </div>
         </a>
         <a class="resource-card" href="https://ruqyahbd.org/apps" rel="noopener">
           <div class="resource-icon"><i class="ti ti-mobile" aria-hidden="true"></i></div>
-          <div class="resource-name">রুকইয়াহ অ্যাপস</div>
-          <p class="resource-desc">মোবাইল ও পিসির জন্য রুকইয়াহ বিষয়ক প্রয়োজনীয় অ্যাপস।</p>
-          <span class="resource-link"><i class="ti ti-arrow-right" aria-hidden="true"></i> ডাউনলোড করুন</span>
+          <div class="resource-content">
+            <div class="resource-name">রুকইয়াহ অ্যাপস</div>
+            <p class="resource-desc">মোবাইল ও পিসির জন্য রুকইয়াহ বিষয়ক প্রয়োজনীয় অ্যাপস।</p>
+            <span class="resource-link"><i class="ti ti-arrow-right" aria-hidden="true"></i> ডাউনলোড করুন</span>
+          </div>
         </a>
         <a class="resource-card" href="https://ruqyahbd.org/networks" target="_blank" rel="noopener">
           <div class="resource-icon"><i class="ti ti-binary" aria-hidden="true"></i></div>
-          <div class="resource-name">সকল প্রজেক্ট</div>
-          <p class="resource-desc">রুকইয়াহ গ্রুপের সকল প্রোফাইল ও প্রজেক্টের লিংক।</p>
-          <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> দেখুন</span>
+          <div class="resource-content">
+            <div class="resource-name">সকল প্রজেক্ট</div>
+            <p class="resource-desc">রুকইয়াহ গ্রুপের সকল প্রোফাইল ও প্রজেক্টের লিংক।</p>
+            <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> দেখুন</span>
+          </div>
         </a>
         <a class="resource-card" href="https://ruqyahbd.org/about" target="_blank" rel="noopener">
           <div class="resource-icon"><i class="ti ti-info-circle" aria-hidden="true"></i></div>
-          <div class="resource-name">আমাদের সম্পর্কে</div>
-          <p class="resource-desc">রুকইয়াহ সাপোর্ট বিডি সম্পর্কে বিস্তারিত তথ্য।</p>
-          <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> পড়ুন</span>
+          <div class="resource-content">
+            <div class="resource-name">আমাদের সম্পর্কে</div>
+            <p class="resource-desc">রুকইয়াহ সাপোর্ট বিডি সম্পর্কে বিস্তারিত তথ্য।</p>
+            <span class="resource-link"><i class="ti ti-external-link" aria-hidden="true"></i> পড়ুন</span>
+          </div>
         </a>
       </div>
 

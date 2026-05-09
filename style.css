@@ -900,9 +900,16 @@ img { display: block; max-width: 100%; }
   border-radius: var(--radius-lg);
   padding: 1.25rem;
   text-decoration: none;
-  display: block;
+  display: flex;
+  gap: 1.15rem;
+  align-items: flex-start;
   transition: border-color .15s;
 }
+
+.resource-icon { font-size: 22px; color: var(--color-text-secondary); flex-shrink: 0; margin-top: 2px; }
+.resource-name { font-size: 15px; font-weight: 500; margin-bottom: .25rem; }
+.resource-desc { font-size: 14px; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: .75rem; }
+.resource-link { font-size: 14px; color: var(--color-text-tertiary); display: flex; align-items: center; gap: 5px; }
 
 .resource-card:hover { border-color: var(--color-border-mid); }
 
