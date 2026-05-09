@@ -21,3 +21,4 @@ dump/
 .gemini/
 .cline/
 .agents/
+.mcp.json.bak

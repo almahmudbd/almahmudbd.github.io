@@ -37,7 +37,7 @@
 
 /* ─── Reset ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; scroll-behavior: smooth; }
+html { font-size: 17px; scroll-behavior: smooth; }
 
 /* ─── Variables ──────────────────────────────────────── */
 :root {
@@ -154,7 +154,7 @@ img { display: block; max-width: 100%; }
 }
 
 .nav-logo {
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 500;
   letter-spacing: -0.3px;
   color: var(--color-text-primary);
@@ -167,7 +167,7 @@ img { display: block; max-width: 100%; }
 }
 
 .nav-links a {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--color-text-secondary);
   transition: color 0.15s;
 }
@@ -201,7 +201,7 @@ img { display: block; max-width: 100%; }
 
 .page-heading {
   font-family: var(--font-serif);
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 500;
   letter-spacing: -0.8px;
   line-height: 1.15;
@@ -209,9 +209,9 @@ img { display: block; max-width: 100%; }
 }
 
 .page-sub {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--color-text-secondary);
-  max-width: 520px;
+  max-width: 580px;
   margin-bottom: 3rem;
   line-height: 1.65;
 }
@@ -237,7 +237,7 @@ img { display: block; max-width: 100%; }
   background: var(--color-bg);
   border: 0.5px solid var(--color-border);
   border-radius: var(--radius-lg);
-  padding: 1.5rem;
+  padding: 1.75rem;
   transition: border-color 0.15s;
 }
 
@@ -256,8 +256,8 @@ img { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 13px;
-  padding: 7px 16px;
+  font-size: 15px;
+  padding: 8px 18px;
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: opacity 0.15s, background 0.15s;
@@ -308,7 +308,7 @@ img { display: block; max-width: 100%; }
 
 .hero-name {
   font-family: var(--font-serif);
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 500;
   letter-spacing: -1.5px;
   line-height: 1.08;
@@ -316,9 +316,9 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-bio {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--color-text-secondary);
-  max-width: 480px;
+  max-width: 520px;
   line-height: 1.7;
 }
 
@@ -386,14 +386,14 @@ img { display: block; max-width: 100%; }
 }
 
 .post-title {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   margin-bottom: 0.2rem;
   line-height: 1.4;
 }
 
 .post-excerpt {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--color-text-secondary);
 }
 
@@ -413,9 +413,9 @@ img { display: block; max-width: 100%; }
   border-bottom: 0.5px solid var(--color-border);
 }
 
-.how-num { font-size: 13px; font-weight: 500; color: var(--color-text-tertiary); }
+.how-num { font-size: 15px; font-weight: 500; color: var(--color-text-tertiary); }
 .how-title { font-size: 14px; font-weight: 500; margin-bottom: 0.2rem; }
-.how-desc { font-size: 13px; color: var(--color-text-secondary); }
+.how-desc { font-size: 15px; color: var(--color-text-secondary); }
 
 /* ─── Business card ──────────────────────────────────── */
 .biz-card {
@@ -452,7 +452,7 @@ img { display: block; max-width: 100%; }
 
 .notice-icon { font-size: 20px; color: var(--color-text-tertiary); flex-shrink: 0; margin-top: 2px; }
 .notice-title { font-size: 14px; font-weight: 500; margin-bottom: 0.3rem; }
-.notice-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.65; }
+.notice-text { font-size: 15px; color: var(--color-text-secondary); line-height: 1.65; }
 
 /* ─── Footer ─────────────────────────────────────────── */
 .footer {
@@ -463,7 +463,7 @@ img { display: block; max-width: 100%; }
   justify-content: space-between;
 }
 
-.footer-text { font-size: 13px; color: var(--color-text-tertiary); }
+.footer-text { font-size: 15px; color: var(--color-text-tertiary); }
 
 .social-links { display: flex; gap: 1rem; }
 .social-links a:hover { color: var(--color-text-secondary); }
@@ -529,8 +529,8 @@ img { display: block; max-width: 100%; }
 .mb-1 { margin-bottom: 1rem; }
 .mb-2 { margin-bottom: 2rem; }
 .mb-3 { margin-bottom: 3rem; }
-.text-sm { font-size: 13px; }
-.text-xs { font-size: 11px; }
+.text-sm { font-size: 15px; }
+.text-xs { font-size: 12px; }
 .text-muted { color: var(--color-text-secondary); }
 .text-hint { color: var(--color-text-tertiary); }
 .font-medium { font-weight: 500; }
