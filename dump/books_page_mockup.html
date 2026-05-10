@@ -1,0 +1,101 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.pg { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 3rem; font-family: var(--font-sans); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding-bottom: 2rem; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 2.5rem; }
+.nav-logo { font-size: 17px; font-weight: 500; color: var(--color-text-primary); letter-spacing: -0.3px; }
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a { font-size: 13px; color: var(--color-text-secondary); text-decoration: none; }
+.nav-links a.active { color: var(--color-text-primary); font-weight: 500; }
+.page-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-tertiary); margin-bottom: 0.5rem; }
+.page-heading { font-size: 32px; font-weight: 500; color: var(--color-text-primary); letter-spacing: -0.8px; font-family: var(--font-serif); margin-bottom: 2.5rem; }
+.book-card { display: grid; grid-template-columns: 100px 1fr; gap: 1.5rem; background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.5rem; margin-bottom: 1rem; }
+.book-cover { width: 100px; height: 145px; background: var(--color-background-secondary); border-radius: 4px; border: 0.5px solid var(--color-border-tertiary); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.book-cover i { font-size: 28px; color: var(--color-text-tertiary); }
+.book-meta {}
+.book-badge { display: inline-block; font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); margin-bottom: 0.6rem; background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); }
+.book-title { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.3rem; font-family: var(--font-serif); }
+.book-subtitle { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 0.75rem; }
+.book-desc { font-size: 14px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1rem; }
+.book-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn-primary { font-size: 13px; padding: 6px 14px; border-radius: var(--border-radius-md); background: var(--color-text-primary); color: var(--color-background-primary); border: none; cursor: pointer; text-decoration: none; }
+.btn-secondary { font-size: 13px; padding: 6px 14px; border-radius: var(--border-radius-md); background: transparent; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary); cursor: pointer; text-decoration: none; }
+.book-info-row { display: flex; gap: 1.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+.book-info-item { font-size: 12px; color: var(--color-text-tertiary); display: flex; align-items: center; gap: 5px; }
+.book-info-item i { font-size: 14px; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 2rem 0; }
+.section-label { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 1rem; }
+.upcoming-card { background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 1.25rem 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.upcoming-text {}
+.upcoming-tag { font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.3rem; }
+.upcoming-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); }
+</style>
+
+<div class="pg">
+  <h2 class="sr-only">বই পেজের মকআপ — প্রকাশিত বই ও আসন্ন বইয়ের তালিকা</h2>
+
+  <nav class="nav">
+    <span class="nav-logo">আপনার নাম</span>
+    <div class="nav-links">
+      <a href="#" class="active">বই</a>
+      <a href="#">ব্লগ</a>
+      <a href="#">কোর্স</a>
+      <a href="#">কনসালটেন্সি</a>
+      <a href="#">প্রজেক্ট</a>
+    </div>
+  </nav>
+
+  <p class="page-title">আমার বই</p>
+  <h1 class="page-heading">প্রকাশিত বই</h1>
+
+  <div class="book-card">
+    <div class="book-cover"><i class="ti ti-book" aria-hidden="true"></i></div>
+    <div class="book-meta">
+      <span class="book-badge">উপন্যাস</span>
+      <div class="book-title">বইয়ের নাম এখানে</div>
+      <div class="book-subtitle">প্রকাশকের নাম · ২০২৩</div>
+      <div class="book-info-row">
+        <span class="book-info-item"><i class="ti ti-file-text" aria-hidden="true"></i> ২৮০ পৃষ্ঠা</span>
+        <span class="book-info-item"><i class="ti ti-star" aria-hidden="true"></i> ৪.৫/৫</span>
+        <span class="book-info-item"><i class="ti ti-language" aria-hidden="true"></i> বাংলা</span>
+      </div>
+      <div class="book-desc">বইটির সংক্ষিপ্ত বিবরণ এখানে থাকবে। কী বিষয়ে লেখা, পাঠক কেন পড়বেন — দুই-তিন লাইনে বলা।</div>
+      <div class="book-actions">
+        <a href="#" class="btn-primary"><i class="ti ti-shopping-cart" style="font-size:13px; vertical-align:-1px; margin-right:4px" aria-hidden="true"></i>কিনুন</a>
+        <a href="#" class="btn-secondary"><i class="ti ti-eye" style="font-size:13px; vertical-align:-1px; margin-right:4px" aria-hidden="true"></i>রিভিউ পড়ুন</a>
+        <a href="#" class="btn-secondary"><i class="ti ti-brand-amazon" style="font-size:13px; vertical-align:-1px; margin-right:4px" aria-hidden="true"></i>Rokomari</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-card">
+    <div class="book-cover"><i class="ti ti-book" aria-hidden="true"></i></div>
+    <div class="book-meta">
+      <span class="book-badge">প্রবন্ধ</span>
+      <div class="book-title">দ্বিতীয় বইয়ের নাম</div>
+      <div class="book-subtitle">প্রকাশকের নাম · ২০২১</div>
+      <div class="book-info-row">
+        <span class="book-info-item"><i class="ti ti-file-text" aria-hidden="true"></i> ১৯২ পৃষ্ঠা</span>
+        <span class="book-info-item"><i class="ti ti-star" aria-hidden="true"></i> ৪.৮/৫</span>
+        <span class="book-info-item"><i class="ti ti-language" aria-hidden="true"></i> বাংলা</span>
+      </div>
+      <div class="book-desc">দ্বিতীয় বইয়ের সংক্ষিপ্ত বিবরণ এখানে। বিষয়বস্তু ও পাঠকের জন্য কী আছে তা দুই লাইনে।</div>
+      <div class="book-actions">
+        <a href="#" class="btn-primary"><i class="ti ti-shopping-cart" style="font-size:13px; vertical-align:-1px; margin-right:4px" aria-hidden="true"></i>কিনুন</a>
+        <a href="#" class="btn-secondary"><i class="ti ti-eye" style="font-size:13px; vertical-align:-1px; margin-right:4px" aria-hidden="true"></i>রিভিউ পড়ুন</a>
+        <a href="#" class="btn-secondary">Rokomari</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-label">আসছে শীঘ্রই</div>
+  <div class="upcoming-card">
+    <div class="upcoming-text">
+      <div class="upcoming-tag">নতুন বই · ২০২৫</div>
+      <div class="upcoming-title">আসন্ন বইয়ের নাম — লেখা চলছে</div>
+    </div>
+    <a href="#" class="btn-secondary"><i class="ti ti-bell" style="font-size:13px; vertical-align:-1px; margin-right:4px" aria-hidden="true"></i>নোটিফাই করুন</a>
+  </div>
+</div>

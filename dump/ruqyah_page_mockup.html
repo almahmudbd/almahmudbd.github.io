@@ -1,0 +1,173 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.pg { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 3rem; font-family: var(--font-sans); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding-bottom: 2rem; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 2.5rem; }
+.nav-logo { font-size: 17px; font-weight: 500; color: var(--color-text-primary); }
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a { font-size: 13px; color: var(--color-text-secondary); text-decoration: none; }
+.nav-links a.active { color: var(--color-text-primary); font-weight: 500; }
+.page-tag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-tertiary); margin-bottom: 0.5rem; }
+.page-heading { font-size: 32px; font-weight: 500; color: var(--color-text-primary); letter-spacing: -0.8px; font-family: var(--font-serif); margin-bottom: 0.75rem; }
+.page-sub { font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 2.5rem; max-width: 540px; }
+.section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-tertiary); margin-bottom: 1rem; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 2.5rem 0; }
+
+.resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 2rem; }
+
+.res-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; text-decoration: none; display: block; transition: border-color 0.15s; }
+.res-card:hover { border-color: var(--color-border-secondary); }
+.res-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+.res-icon { font-size: 22px; color: var(--color-text-secondary); }
+.res-type { font-size: 11px; padding: 3px 8px; border-radius: 6px; background: var(--color-background-secondary); color: var(--color-text-tertiary); border: 0.5px solid var(--color-border-tertiary); }
+.res-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.3rem; }
+.res-meta { font-size: 12px; color: var(--color-text-tertiary); margin-bottom: 0.65rem; }
+.res-desc { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1rem; }
+.res-link { font-size: 13px; color: var(--color-text-secondary); display: flex; align-items: center; gap: 5px; }
+
+.lecture-list { display: flex; flex-direction: column; }
+.lecture-item { display: grid; grid-template-columns: 36px 1fr auto; gap: 1rem; padding: 1rem 0; border-bottom: 0.5px solid var(--color-border-tertiary); align-items: center; }
+.lecture-item:first-child { padding-top: 0; }
+.lec-num { font-size: 12px; font-weight: 500; color: var(--color-text-tertiary); background: var(--color-background-secondary); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.lec-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.2rem; }
+.lec-sub { font-size: 12px; color: var(--color-text-tertiary); }
+.btn-sm-sec { font-size: 12px; padding: 5px 12px; border-radius: 8px; background: transparent; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+
+.notice-box { background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 2rem; }
+.notice-icon { font-size: 20px; color: var(--color-text-tertiary); flex-shrink: 0; margin-top: 1px; }
+.notice-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.3rem; }
+.notice-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.65; }
+
+.cta-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 1.5rem; }
+.btn-primary { font-size: 13px; padding: 7px 16px; border-radius: 10px; background: var(--color-text-primary); color: var(--color-background-primary); border: none; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+.btn-secondary { font-size: 13px; padding: 7px 16px; border-radius: 10px; background: transparent; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+</style>
+
+<div class="pg">
+  <h2 class="sr-only">রুকইয়াহ পেজের মকআপ — গ্রুপ, পেজ ও লেকচারের লিংক</h2>
+
+  <nav class="nav">
+    <span class="nav-logo">আপনার নাম</span>
+    <div class="nav-links">
+      <a href="#">বই</a>
+      <a href="#">ব্লগ</a>
+      <a href="#">কোর্স</a>
+      <a href="#">কনসালটেন্সি</a>
+      <a href="#" class="active">রুকইয়াহ</a>
+      <a href="#">প্রজেক্ট</a>
+    </div>
+  </nav>
+
+  <p class="page-tag">কুরআন ও সুন্নাহর আলোকে</p>
+  <h1 class="page-heading">রুকইয়াহ রিসোর্স</h1>
+  <p class="page-sub">রুকইয়াহ সম্পর্কে জানতে, শিখতে এবং সংযুক্ত হতে — গ্রুপ, পেজ ও লেকচারের সব লিংক এখানে একত্রে পাবেন।</p>
+
+  <div class="notice-box">
+    <i class="ti ti-info-circle notice-icon" aria-hidden="true"></i>
+    <div>
+      <div class="notice-title">সেশন বুক করতে চান?</div>
+      <div class="notice-text">ব্যক্তিগত রুকইয়াহ সেশনের জন্য কনসালটেন্সি পেজে যান। এই পেজে শুধু শিক্ষামূলক রিসোর্স ও কমিউনিটি লিংক আছে।</div>
+    </div>
+  </div>
+
+  <p class="section-label">কমিউনিটি</p>
+  <div class="resource-grid">
+    <a class="res-card" href="#">
+      <div class="res-top">
+        <i class="ti ti-brand-facebook res-icon" aria-hidden="true"></i>
+        <span class="res-type">গ্রুপ</span>
+      </div>
+      <div class="res-title">রুকইয়াহ গ্রুপের নাম</div>
+      <div class="res-meta">৩৫,০০০ সদস্য · Facebook</div>
+      <div class="res-desc">গ্রুপটি কী নিয়ে, কারা যোগ দিতে পারবেন — সংক্ষেপে।</div>
+      <span class="res-link"><i class="ti ti-external-link" aria-hidden="true"></i> গ্রুপে যোগ দিন</span>
+    </a>
+
+    <a class="res-card" href="#">
+      <div class="res-top">
+        <i class="ti ti-brand-facebook res-icon" aria-hidden="true"></i>
+        <span class="res-type">পেজ</span>
+      </div>
+      <div class="res-title">রুকইয়াহ পেজের নাম</div>
+      <div class="res-meta">১২,০০০ ফলোয়ার · Facebook</div>
+      <div class="res-desc">পেজে কী ধরনের কন্টেন্ট পাওয়া যায় তার সংক্ষিপ্ত বিবরণ।</div>
+      <span class="res-link"><i class="ti ti-external-link" aria-hidden="true"></i> পেজ ফলো করুন</span>
+    </a>
+
+    <a class="res-card" href="#">
+      <div class="res-top">
+        <i class="ti ti-brand-youtube res-icon" aria-hidden="true"></i>
+        <span class="res-type">চ্যানেল</span>
+      </div>
+      <div class="res-title">YouTube চ্যানেলের নাম</div>
+      <div class="res-meta">৮,৫০০ সাবস্ক্রাইবার · YouTube</div>
+      <div class="res-desc">রুকইয়াহ বিষয়ক ভিডিও লেকচার ও টিউটোরিয়াল।</div>
+      <span class="res-link"><i class="ti ti-external-link" aria-hidden="true"></i> চ্যানেল দেখুন</span>
+    </a>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="section-label">নির্বাচিত লেকচার</p>
+  <div class="lecture-list">
+    <div class="lecture-item">
+      <div class="lec-num">০১</div>
+      <div>
+        <div class="lec-title">রুকইয়াহ কী এবং কেন — পরিচিতি</div>
+        <div class="lec-sub">৪৫ মিনিট · YouTube</div>
+      </div>
+      <a href="#" class="btn-sm-sec"><i class="ti ti-player-play" style="font-size:12px" aria-hidden="true"></i> দেখুন</a>
+    </div>
+    <div class="lecture-item">
+      <div class="lec-num">০২</div>
+      <div>
+        <div class="lec-title">নিজে রুকইয়াহ করার পদ্ধতি</div>
+        <div class="lec-sub">৫২ মিনিট · YouTube</div>
+      </div>
+      <a href="#" class="btn-sm-sec"><i class="ti ti-player-play" style="font-size:12px" aria-hidden="true"></i> দেখুন</a>
+    </div>
+    <div class="lecture-item">
+      <div class="lec-num">০৩</div>
+      <div>
+        <div class="lec-title">সিহর ও বদনজর — চেনার উপায়</div>
+        <div class="lec-sub">৩৮ মিনিট · Facebook</div>
+      </div>
+      <a href="#" class="btn-sm-sec"><i class="ti ti-player-play" style="font-size:12px" aria-hidden="true"></i> দেখুন</a>
+    </div>
+    <div class="lecture-item">
+      <div class="lec-num">০৪</div>
+      <div>
+        <div class="lec-title">রাকি হওয়ার শর্ত ও আদব</div>
+        <div class="lec-sub">৬০ মিনিট · YouTube</div>
+      </div>
+      <a href="#" class="btn-sm-sec"><i class="ti ti-player-play" style="font-size:12px" aria-hidden="true"></i> দেখুন</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="section-label">আরও রিসোর্স</p>
+  <div class="resource-grid">
+    <a class="res-card" href="#">
+      <div class="res-top">
+        <i class="ti ti-file-text res-icon" aria-hidden="true"></i>
+        <span class="res-type">পিডিএফ</span>
+      </div>
+      <div class="res-title">রুকইয়াহ গাইড</div>
+      <div class="res-meta">বিনামূল্যে · ডাউনলোড</div>
+      <div class="res-desc">শুরু থেকে শেষ পর্যন্ত রুকইয়াহর সম্পূর্ণ গাইড।</div>
+      <span class="res-link"><i class="ti ti-download" aria-hidden="true"></i> ডাউনলোড করুন</span>
+    </a>
+    <a class="res-card" href="#">
+      <div class="res-top">
+        <i class="ti ti-brand-whatsapp res-icon" aria-hidden="true"></i>
+        <span class="res-type">গ্রুপ</span>
+      </div>
+      <div class="res-title">WhatsApp গ্রুপ</div>
+      <div class="res-meta">সীমিত সদস্য · সক্রিয়</div>
+      <div class="res-desc">সরাসরি প্রশ্ন করার জন্য ঘনিষ্ঠ কমিউনিটি গ্রুপ।</div>
+      <span class="res-link"><i class="ti ti-external-link" aria-hidden="true"></i> যোগ দিন</span>
+    </a>
+  </div>
+
+</div>

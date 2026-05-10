@@ -7,9 +7,8 @@
 /.vscode
 AGENT.md
 CLAUDE.md
-
 .agent-mem/
-dump/
+
 
 # Auto-generated agent rules (personalized per developer)
 .brainsync/agent-rules.md

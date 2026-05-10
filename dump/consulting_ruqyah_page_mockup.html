@@ -1,0 +1,138 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.pg { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 3rem; font-family: var(--font-sans); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding-bottom: 2rem; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 2.5rem; }
+.nav-logo { font-size: 17px; font-weight: 500; color: var(--color-text-primary); }
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a { font-size: 13px; color: var(--color-text-secondary); text-decoration: none; }
+.nav-links a.active { color: var(--color-text-primary); font-weight: 500; }
+.page-tag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-tertiary); margin-bottom: 0.5rem; }
+.page-heading { font-size: 32px; font-weight: 500; color: var(--color-text-primary); letter-spacing: -0.8px; font-family: var(--font-serif); margin-bottom: 0.75rem; }
+.page-sub { font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 2.5rem; max-width: 520px; }
+.section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-tertiary); margin-bottom: 1rem; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 2.5rem 0; }
+
+.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 2rem; }
+.service-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.5rem; }
+.service-card.featured { border: 2px solid var(--color-border-info); }
+.service-icon { font-size: 22px; color: var(--color-text-secondary); margin-bottom: 0.75rem; }
+.service-title { font-size: 16px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.3rem; }
+.service-duration { font-size: 12px; color: var(--color-text-tertiary); margin-bottom: 0.65rem; display: flex; align-items: center; gap: 5px; }
+.service-desc { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1rem; }
+.service-price { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 1rem; }
+.btn-primary { font-size: 13px; padding: 7px 16px; border-radius: var(--border-radius-md); background: var(--color-text-primary); color: var(--color-background-primary); border: none; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+.btn-secondary { font-size: 13px; padding: 7px 16px; border-radius: var(--border-radius-md); background: transparent; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+
+.how-list { display: flex; flex-direction: column; gap: 0; margin-bottom: 0; }
+.how-item { display: grid; grid-template-columns: 28px 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 0.5px solid var(--color-border-tertiary); align-items: start; }
+.how-item:last-child { border-bottom: none; }
+.how-num { font-size: 13px; font-weight: 500; color: var(--color-text-tertiary); padding-top: 1px; }
+.how-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.2rem; }
+.how-desc { font-size: 13px; color: var(--color-text-secondary); line-height: 1.55; }
+
+.ruqyah-box { background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 1.75rem; }
+.ruqyah-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.65rem; }
+.ruqyah-icon { font-size: 22px; color: var(--color-text-secondary); }
+.ruqyah-title { font-size: 20px; font-weight: 500; color: var(--color-text-primary); font-family: var(--font-serif); }
+.ruqyah-sub { font-size: 14px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 1.25rem; max-width: 560px; }
+.ruqyah-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 1.25rem; }
+.ruqyah-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 1rem; }
+.ruqyah-card-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.25rem; }
+.ruqyah-card-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; }
+.ruqyah-note { font-size: 12px; color: var(--color-text-tertiary); line-height: 1.55; margin-bottom: 1.25rem; }
+
+.cta-row { display: flex; gap: 8px; flex-wrap: wrap; }
+</style>
+
+<div class="pg">
+  <h2 class="sr-only">কনসালটেন্সি ও রুকইয়াহ পেজের মকআপ</h2>
+
+  <nav class="nav">
+    <span class="nav-logo">আপনার নাম</span>
+    <div class="nav-links">
+      <a href="#">বই</a>
+      <a href="#">ব্লগ</a>
+      <a href="#">কোর্স</a>
+      <a href="#" class="active">কনসালটেন্সি</a>
+      <a href="#">প্রজেক্ট</a>
+    </div>
+  </nav>
+
+  <p class="page-tag">সেবাসমূহ</p>
+  <h1 class="page-heading">কনসালটেন্সি ও রুকইয়াহ</h1>
+  <p class="page-sub">ব্যক্তিগত বা পেশাদার বিষয়ে পরামর্শ, অথবা রুকইয়াহ সেশনের জন্য অ্যাপয়েন্টমেন্ট নিন।</p>
+
+  <p class="section-label">কনসালটেন্সি সেশন</p>
+  <div class="service-grid">
+    <div class="service-card featured">
+      <div class="service-icon"><i class="ti ti-user-check" aria-hidden="true"></i></div>
+      <div class="service-title">ওয়ান-টু-ওয়ান সেশন</div>
+      <div class="service-duration"><i class="ti ti-clock" style="font-size:13px" aria-hidden="true"></i> ৬০ মিনিট</div>
+      <div class="service-desc">লেখালেখি, ক্যারিয়ার বা ব্যক্তিগত বিষয়ে গভীর আলোচনা ও দিকনির্দেশনা।</div>
+      <div class="service-price">৳ ২,০০০</div>
+      <a href="#" class="btn-primary"><i class="ti ti-calendar-event" aria-hidden="true"></i> বুক করুন</a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-messages" aria-hidden="true"></i></div>
+      <div class="service-title">দ্রুত পরামর্শ</div>
+      <div class="service-duration"><i class="ti ti-clock" style="font-size:13px" aria-hidden="true"></i> ৩০ মিনিট</div>
+      <div class="service-desc">নির্দিষ্ট একটি প্রশ্ন বা সমস্যার জন্য সংক্ষিপ্ত ও কার্যকর পরামর্শ।</div>
+      <div class="service-price">৳ ১,০০০</div>
+      <a href="#" class="btn-primary"><i class="ti ti-calendar-event" aria-hidden="true"></i> বুক করুন</a>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="ti ti-building" aria-hidden="true"></i></div>
+      <div class="service-title">প্রাতিষ্ঠানিক পরামর্শ</div>
+      <div class="service-duration"><i class="ti ti-clock" style="font-size:13px" aria-hidden="true"></i> কাস্টম</div>
+      <div class="service-desc">প্রতিষ্ঠান বা টিমের জন্য ওয়ার্কশপ ও কনসালটেশন প্যাকেজ।</div>
+      <div class="service-price">আলোচনাসাপেক্ষ</div>
+      <a href="#" class="btn-secondary"><i class="ti ti-mail" aria-hidden="true"></i> যোগাযোগ করুন</a>
+    </div>
+  </div>
+
+  <p class="section-label">কীভাবে কাজ করে</p>
+  <div class="how-list">
+    <div class="how-item">
+      <span class="how-num">০১</span>
+      <div><div class="how-title">সেশন বুক করুন</div><div class="how-desc">পছন্দের ধরন ও সময় বেছে নিয়ে অ্যাপয়েন্টমেন্ট নিন।</div></div>
+    </div>
+    <div class="how-item">
+      <span class="how-num">০২</span>
+      <div><div class="how-title">ফর্ম পূরণ করুন</div><div class="how-desc">আপনার বিষয়, প্রশ্ন বা সমস্যা সংক্ষেপে জানান।</div></div>
+    </div>
+    <div class="how-item">
+      <span class="how-num">০৩</span>
+      <div><div class="how-title">সেশন সম্পন্ন করুন</div><div class="how-desc">নির্ধারিত সময়ে Zoom বা対面 সাক্ষাতে আলোচনা হবে।</div></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="ruqyah-box">
+    <div class="ruqyah-header">
+      <i class="ti ti-heart-handshake ruqyah-icon" aria-hidden="true"></i>
+      <span class="ruqyah-title">রুকইয়াহ সেবা</span>
+    </div>
+    <p class="ruqyah-sub">কুরআন ও সুন্নাহ অনুযায়ী রুকইয়াহ সেশন পরিচালনা করা হয়। সরাসরি সাক্ষাৎ ও অনলাইন — উভয়ভাবেই সেবা নেওয়া যাবে।</p>
+    <div class="ruqyah-cards">
+      <div class="ruqyah-card">
+        <div class="ruqyah-card-title"><i class="ti ti-user" style="font-size:13px; vertical-align:-1px; margin-right:4px" aria-hidden="true"></i>সরাসরি সেশন</div>
+        <div class="ruqyah-card-desc">নির্ধারিত স্থানে সাক্ষাৎ করে রুকইয়াহ সেশন।</div>
+      </div>
+      <div class="ruqyah-card">
+        <div class="ruqyah-card-title"><i class="ti ti-video" style="font-size:13px; vertical-align:-1px; margin-right:4px" aria-hidden="true"></i>অনলাইন সেশন</div>
+        <div class="ruqyah-card-desc">ভিডিও কলে দূরবর্তী রুকইয়াহ ও পরামর্শ।</div>
+      </div>
+      <div class="ruqyah-card">
+        <div class="ruqyah-card-title"><i class="ti ti-book" style="font-size:13px; vertical-align:-1px; margin-right:4px" aria-hidden="true"></i>গাইডেন্স</div>
+        <div class="ruqyah-card-desc">নিজে রুকইয়াহ করার জন্য পদ্ধতি ও দিকনির্দেশনা।</div>
+      </div>
+    </div>
+    <p class="ruqyah-note">বিঃদ্রঃ সেশনের আগে সংক্ষিপ্ত প্রশ্নপত্র পূরণ করতে হবে। জরুরি ক্ষেত্রে সরাসরি যোগাযোগ করুন।</p>
+    <div class="cta-row">
+      <a href="#" class="btn-primary"><i class="ti ti-calendar-event" aria-hidden="true"></i> সেশন বুক করুন</a>
+      <a href="#" class="btn-secondary"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i> WhatsApp করুন</a>
+    </div>
+  </div>
+</div>

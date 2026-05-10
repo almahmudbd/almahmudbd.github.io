@@ -1,0 +1,133 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.pg { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem 3rem; font-family: var(--font-sans); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding-bottom: 2rem; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 2.5rem; }
+.nav-logo { font-size: 17px; font-weight: 500; color: var(--color-text-primary); }
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a { font-size: 13px; color: var(--color-text-secondary); text-decoration: none; }
+.nav-links a.active { color: var(--color-text-primary); font-weight: 500; }
+.page-tag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-tertiary); margin-bottom: 0.5rem; }
+.page-heading { font-size: 32px; font-weight: 500; color: var(--color-text-primary); letter-spacing: -0.8px; font-family: var(--font-serif); margin-bottom: 0.75rem; }
+.page-sub { font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 2.5rem; max-width: 520px; }
+.section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-tertiary); margin-bottom: 1rem; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 2.5rem 0; }
+
+.biz-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.5rem; margin-bottom: 1rem; display: grid; grid-template-columns: 52px 1fr; gap: 1.25rem; align-items: start; }
+.biz-logo { width: 52px; height: 52px; border-radius: var(--border-radius-md); background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.biz-logo i { font-size: 22px; color: var(--color-text-secondary); }
+.biz-name { font-size: 16px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.2rem; }
+.biz-type { font-size: 12px; color: var(--color-text-tertiary); margin-bottom: 0.6rem; }
+.biz-desc { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 0.9rem; }
+.biz-links { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn-sm-primary { font-size: 12px; padding: 5px 12px; border-radius: var(--border-radius-md); background: var(--color-text-primary); color: var(--color-background-primary); border: none; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+.btn-sm-sec { font-size: 12px; padding: 5px 12px; border-radius: var(--border-radius-md); background: transparent; color: var(--color-text-secondary); border: 0.5px solid var(--color-border-secondary); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+.tag { font-size: 11px; padding: 3px 8px; border-radius: var(--border-radius-md); background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); }
+
+.proj-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.proj-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; }
+.proj-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 0.65rem; }
+.proj-icon { font-size: 20px; color: var(--color-text-secondary); }
+.proj-status { font-size: 11px; padding: 2px 8px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-tertiary); background: var(--color-background-secondary); }
+.proj-status.live { background: var(--color-background-success); color: var(--color-text-success); border-color: var(--color-border-success); }
+.proj-status.wip { background: var(--color-background-warning); color: var(--color-text-warning); border-color: var(--color-border-warning); }
+.proj-name { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 0.25rem; }
+.proj-stack { font-size: 11px; color: var(--color-text-tertiary); margin-bottom: 0.6rem; }
+.proj-desc { font-size: 13px; color: var(--color-text-secondary); line-height: 1.55; margin-bottom: 0.9rem; }
+.proj-links { display: flex; gap: 6px; }
+</style>
+
+<div class="pg">
+  <h2 class="sr-only">ব্যবসা ও প্রজেক্ট পেজের মকআপ</h2>
+
+  <nav class="nav">
+    <span class="nav-logo">আপনার নাম</span>
+    <div class="nav-links">
+      <a href="#">বই</a>
+      <a href="#">ব্লগ</a>
+      <a href="#">কোর্স</a>
+      <a href="#">কনসালটেন্সি</a>
+      <a href="#" class="active">প্রজেক্ট</a>
+    </div>
+  </nav>
+
+  <p class="page-tag">উদ্যোগ ও নির্মাণ</p>
+  <h1 class="page-heading">ব্যবসা ও প্রজেক্ট</h1>
+  <p class="page-sub">পরিচালিত ব্যবসা প্রতিষ্ঠান এবং টুকটাক প্রোগ্রামিং প্রজেক্টের একটা ওভারভিউ।</p>
+
+  <p class="section-label">ব্যবসা প্রতিষ্ঠান</p>
+
+  <div class="biz-card">
+    <div class="biz-logo"><i class="ti ti-building-store" aria-hidden="true"></i></div>
+    <div>
+      <div class="biz-name">প্রতিষ্ঠানের নাম</div>
+      <div class="biz-type">ধরন · প্রতিষ্ঠাকাল ২০২০</div>
+      <div class="biz-desc">প্রতিষ্ঠানটি কী করে, কাদের জন্য, এবং কোথায় — সংক্ষেপে দুই লাইনে বলা। পণ্য বা সেবার ধরন উল্লেখ করুন।</div>
+      <div class="biz-links">
+        <a href="#" class="btn-sm-primary"><i class="ti ti-external-link" style="font-size:12px" aria-hidden="true"></i> ওয়েবসাইট</a>
+        <a href="#" class="btn-sm-sec"><i class="ti ti-brand-facebook" style="font-size:12px" aria-hidden="true"></i> Facebook পেজ</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="biz-card">
+    <div class="biz-logo"><i class="ti ti-briefcase" aria-hidden="true"></i></div>
+    <div>
+      <div class="biz-name">দ্বিতীয় প্রতিষ্ঠানের নাম</div>
+      <div class="biz-type">ধরন · প্রতিষ্ঠাকাল ২০২২</div>
+      <div class="biz-desc">এই প্রতিষ্ঠানের সেবা বা পণ্যের বিবরণ। লক্ষ্য গ্রাহক কারা এবং কী সমস্যার সমাধান করে।</div>
+      <div class="biz-links">
+        <a href="#" class="btn-sm-primary"><i class="ti ti-external-link" style="font-size:12px" aria-hidden="true"></i> ওয়েবসাইট</a>
+        <a href="#" class="btn-sm-sec"><i class="ti ti-brand-facebook" style="font-size:12px" aria-hidden="true"></i> Facebook পেজ</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="section-label">প্রোগ্রামিং প্রজেক্ট</p>
+  <div class="proj-grid">
+
+    <div class="proj-card">
+      <div class="proj-top">
+        <i class="ti ti-device-laptop proj-icon" aria-hidden="true"></i>
+        <span class="proj-status live">লাইভ</span>
+      </div>
+      <div class="proj-name">প্রজেক্টের নাম</div>
+      <div class="proj-stack">Python · Django · PostgreSQL</div>
+      <div class="proj-desc">প্রজেক্টটি কী করে, কেন বানানো হয়েছে — এক-দুই লাইনে।</div>
+      <div class="proj-links">
+        <a href="#" class="btn-sm-primary"><i class="ti ti-external-link" style="font-size:12px" aria-hidden="true"></i> দেখুন</a>
+        <a href="#" class="btn-sm-sec"><i class="ti ti-brand-github" style="font-size:12px" aria-hidden="true"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-top">
+        <i class="ti ti-code proj-icon" aria-hidden="true"></i>
+        <span class="proj-status live">লাইভ</span>
+      </div>
+      <div class="proj-name">দ্বিতীয় প্রজেক্ট</div>
+      <div class="proj-stack">JavaScript · React · Firebase</div>
+      <div class="proj-desc">এই প্রজেক্টের উদ্দেশ্য ও কার্যকারিতা সংক্ষেপে।</div>
+      <div class="proj-links">
+        <a href="#" class="btn-sm-primary"><i class="ti ti-external-link" style="font-size:12px" aria-hidden="true"></i> দেখুন</a>
+        <a href="#" class="btn-sm-sec"><i class="ti ti-brand-github" style="font-size:12px" aria-hidden="true"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-top">
+        <i class="ti ti-tools proj-icon" aria-hidden="true"></i>
+        <span class="proj-status wip">চলমান</span>
+      </div>
+      <div class="proj-name">তৃতীয় প্রজেক্ট</div>
+      <div class="proj-stack">Next.js · Tailwind</div>
+      <div class="proj-desc">এখনও তৈরি হচ্ছে — আইডিয়া বা লক্ষ্য উল্লেখ করুন।</div>
+      <div class="proj-links">
+        <a href="#" class="btn-sm-sec"><i class="ti ti-brand-github" style="font-size:12px" aria-hidden="true"></i> GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</div>
