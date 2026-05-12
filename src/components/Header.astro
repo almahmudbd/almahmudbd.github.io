@@ -1,0 +1,98 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+---
+<header class="nav" role="banner">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">almahmud</a>
+    
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="ডার্ক মোড">
+        <i class="ti ti-moon"></i>
+      </button>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="মেনু খুলুন" aria-expanded="false">
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <nav aria-label="প্রধান নেভিগেশন">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/blog" class={pathname === "/blog" || pathname === "/blog/" ? "active" : ""}>ব্লগ</a></li>
+        <li><a href="/projects" class={pathname === "/projects" || pathname === "/projects/" ? "active" : ""}>প্রজেক্ট</a></li>
+        <li><a href="/ruqyah" class={pathname === "/ruqyah" || pathname === "/ruqyah/" ? "active" : ""}>রুকইয়াহ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  const themeToggle = document.getElementById('theme-toggle');
+  
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open.toString());
+    });
+  }
+
+  if (themeToggle) {
+    const themeIcon = themeToggle.querySelector('i');
+    
+    const updateIcon = (theme) => {
+      if (themeIcon) {
+        themeIcon.className = theme === 'dark' ? 'ti ti-sun' : 'ti ti-moon';
+      }
+    };
+
+    // Initial icon state
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    updateIcon(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      updateIcon(theme);
+    });
+  }
+
+  // Close menu on outside click
+  document.addEventListener('click', (e) => {
+    if (navLinks && navToggle && !e.target.closest('.nav-inner')) {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+
+<style>
+  /* Local overrides or specific styles for Header if needed */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    order: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--color-bg);
+      flex-direction: column;
+      padding: 1rem;
+      border-bottom: 1px solid var(--color-border);
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    }
+    
+    .nav-links.open {
+      display: flex;
+    }
+  }
+</style>
