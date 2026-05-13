@@ -6,9 +6,10 @@ import '../styles/global.css';
 interface Props {
 	title: string;
 	description?: string;
+	lastUpdated?: string;
 }
 
-const { title, description = "আব্দুল্লাহ আল মাহমুদের ব্যক্তিগত ওয়েবসাইট। লেখক, শিক্ষক, ব্যবসায়ী এবং দাঈ ইলাল্লাহ।" } = Astro.props;
+const { title, description = "আব্দুল্লাহ আল মাহমুদের ব্যক্তিগত ওয়েবসাইট। লেখক, শিক্ষক, ব্যবসায়ী এবং দাঈ ইলাল্লাহ।", lastUpdated } = Astro.props;
 ---
 
 <!doctype html>
@@ -40,6 +41,7 @@ const { title, description = "আব্দুল্লাহ আল মাহম
 		<main class="page">
 			<div class="container">
 				<slot />
+				{lastUpdated && <div class="last-updated">সর্বশেষ আপডেট: {lastUpdated}</div>}
 			</div>
 		</main>
 		<Footer />

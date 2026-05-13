@@ -2,10 +2,26 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="বই — almahmud" description="আব্দুল্লাহ আল মাহমুদের প্রকাশিত বইয়ের তালিকা ও প্রাপ্তিস্থান">
+<Layout 
+  title="বই — almahmud" 
+  description="আব্দুল্লাহ আল মাহমুদের প্রকাশিত বইয়ের তালিকা ও প্রাপ্তিস্থান"
+  lastUpdated="১৩ মে ২০২৬"
+>
   <p class="page-tag">আমার বই</p>
   <h1 class="page-heading">প্রকাশিত বই</h1>
   <p class="page-sub">রুকইয়াহ বিষয়ে তিনটি বই প্রকাশিত হয়েছে। দেশজুড়ে ইসলামি বইয়ের দোকান এবং অনলাইন শপে পাওয়া যাচ্ছে।</p>
+
+  <div class="notice-box">
+    <i class="ti ti-bulb notice-icon" aria-hidden="true"></i>
+    <div>
+      <p class="notice-text">
+        <strong>তিনটি বইয়ের মধ্যে কোনটি নেবেন?</strong><br>
+        আপনার কাছে অন্য কোনো বই না থাকলে প্রথমে <strong>«রুকইয়াহ»</strong> বইটি সংগ্রহ করুন — এটিই সবচেয়ে পূর্ণাঙ্গ।
+      </p>
+    </div>
+  </div>
+
+  <hr class="divider">
 
   <!-- বই ১: রুকইয়াহ -->
   <article class="book-card-wrap">
@@ -15,17 +31,17 @@ import Layout from '../layouts/Layout.astro';
     <div>
       <span class="book-badge">রুকইয়াহ বিষয়ক</span>
       <h2 class="book-title">রুকইয়াহ</h2>
-      <div class="book-subtitle">সন্দীপন প্রকাশন লিমিটেড · ২০২৪ (নতুন সংস্করণ)</div>
+      <div class="book-subtitle">সন্দীপন প্রকাশন · ২০২৪ (নতুন সংস্করণ)</div>
       <div class="book-info-row">
         <span class="book-info-item"><i class="ti ti-file-text" aria-hidden="true"></i> ৩১২ পৃষ্ঠা</span>
         <span class="book-info-item"><i class="ti ti-currency-taka" aria-hidden="true"></i> মুদ্রিত মূল্য ৪৬০ (সাধারণত ৩২৫–৩৫০৳)</span>
         <span class="book-info-item"><i class="ti ti-language" aria-hidden="true"></i> বাংলা</span>
       </div>
       <p class="book-desc">ইসলামসম্মত স্প্রিচ্যুয়াল হিলিং নিয়ে সহজ ভাষায় বিস্তর আলোচনা। বইটি অনুসরণ করে নিজের ও আশেপাশের মানুষদের জিন, জাদু, বদনজর সহ অন্যান্য সমস্যার জন্য রুকইয়াহ করতে পারবেন। প্রচলিত সন্দেহজনক পদ্ধতি সম্পর্কেও সতর্ক হতে পারবেন ইনশাআল্লাহ।</p>
-      <p class="text-sm text-hint" style="margin-bottom:.75rem">সম্পাদনা: আবদুল্লাহ আল মাসউদ এবং আলী হাসান ওসামা</p>
       <div class="book-actions">
         <a href="https://www.wafilife.com/rukiyah/pd/24578" target="_blank" rel="noopener" class="btn-p"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Wafilife</a>
         <a href="https://rkmri.co/yElNAT0EelNN/" target="_blank" rel="noopener" class="btn-s">রকমারি</a>
+        <a href="https://facebook.com/sondiponprokashon/" target="_blank" rel="noopener" class="btn-s">সন্দীপন</a>
       </div>
     </div>
   </article>
@@ -48,6 +64,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="book-actions">
         <a href="https://www.wafilife.com/ruqiyar-ayat-o-dua/pd/27628" target="_blank" rel="noopener" class="btn-p"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Wafilife</a>
         <a href="https://rkmri.co/2eeAyTyA2mA0/" target="_blank" rel="noopener" class="btn-s">রকমারি</a>
+        <a href="https://facebook.com/chetonaprokashoni" target="_blank" rel="noopener" class="btn-s">চেতনা</a>
       </div>
     </div>
   </article>
@@ -70,6 +87,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="book-actions">
         <a href="https://www.wafilife.com/mukhtasar-rukiyah/pd/11177" target="_blank" rel="noopener" class="btn-p"><i class="ti ti-shopping-cart" aria-hidden="true"></i> Wafilife</a>
         <a href="https://rkmri.co/5m5NMeNTp3eS/" target="_blank" rel="noopener" class="btn-s">রকমারি</a>
+        <a href="https://facebook.com/chetonaprokashoni" target="_blank" rel="noopener" class="btn-s">চেতনা</a>
       </div>
     </div>
   </article>
@@ -89,18 +107,6 @@ import Layout from '../layouts/Layout.astro';
       <a href="https://www.amazon.com/dp/B07KPMHMTN" target="_blank" rel="noopener" class="btn-s">Amazon.com (USA)</a>
       <a href="https://www.facebook.com/MillatShop" target="_blank" rel="noopener" class="btn-s">MillatShop (ভারত)</a>
       <a href="https://ruqyahbd.org/shop" target="_blank" rel="noopener" class="btn-s">জেলাভিত্তিক প্রাপ্তিস্থান/বুকশপের তালিকা</a>
-    </div>
-  </div>
-
-  <hr class="divider">
-
-  <div class="notice-box">
-    <i class="ti ti-bulb notice-icon" aria-hidden="true"></i>
-    <div>
-      <p class="notice-text">
-        <strong>তিনটি বইয়ের মধ্যে কোনটি নেবেন?</strong><br>
-        আপনার কাছে অন্য কোনো বই না থাকলে প্রথমে <strong>«রুকইয়াহ»</strong> বইটি সংগ্রহ করুন — এটিই সবচেয়ে পূর্ণাঙ্গ।
-      </p>
     </div>
   </div>
 </Layout>
