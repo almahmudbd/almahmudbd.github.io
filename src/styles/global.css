@@ -1,35 +1,28 @@
 /* ─── Fonts ──────────────────────────────────────────── */
 @font-face {
-  font-family: 'HindSiliguri';
-  src: url('assets/HindSiliguri-Regular.ttf') format('truetype');
+  font-family: 'Hind Siliguri';
+  src: url('/assets/HindSiliguri-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'HindSiliguri';
-  src: url('assets/HindSiliguri-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'HindSiliguri';
-  src: url('assets/HindSiliguri-Bold.ttf') format('truetype');
+  font-family: 'Hind Siliguri';
+  src: url('/assets/HindSiliguri-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Noto Serif Bengali';
-  src: url('assets/NotoSerifBengali-Regular.ttf') format('truetype');
+  src: url('/assets/NotoSerifBengali-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Noto Serif Bengali';
-  src: url('assets/NotoSerifBengali-Bold.ttf') format('truetype');
+  src: url('/assets/NotoSerifBengali-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -41,7 +34,7 @@ html { font-size: 17px; scroll-behavior: smooth; }
 
 /* ─── Variables ──────────────────────────────────────── */
 :root {
-  --font-sans: 'HindSiliguri', 'Noto Sans Bengali', sans-serif;
+  --font-sans: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
   --font-serif: 'Noto Serif Bengali', Georgia, serif;
 
   /* Background */
@@ -651,7 +644,8 @@ img { display: block; max-width: 100%; }
   width: 240px;
   height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--color-bg-secondary);
   flex-shrink: 0;
   border-right: 0.5px solid var(--color-border);
 }
@@ -1041,7 +1035,8 @@ img { display: block; max-width: 100%; }
   .course-card { flex-direction: column; }
   .course-banner {
     width: 100%;
-    height: 200px;
+    height: auto;
+    object-fit: contain;
     border-right: none;
     border-bottom: 0.5px solid var(--color-border);
   }
