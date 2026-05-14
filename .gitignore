@@ -1,6 +1,5 @@
 # build output
 dist/
-# generated types
 .astro/
 
 # dependencies
@@ -14,32 +13,23 @@ pnpm-debug.log*
 
 
 # environment variables
-.env
-.env.production
-
-# macOS-specific files
-.DS_Store
-
-# jetbrains setting folder
-.idea/
-
-AGENT.md
-CLAUDE.md
-.agent-mem/
-/.agent
-/.agents
-/.brainsync
-/.cursor
-.mcp.*
-.windsurfrules
-
-# Auto-generated agent rules (personalized per developer)
-.brainsync/agent-rules.md
+.env*
+*.env*
 
 # Auto-generated AI agent exclusions
+.DS_Store
+AGENT.md
+CLAUDE.md
 .cursorrules
 .clineRules
-.agent/
 .gemini/
 .cline/
+.idea/
+.agent-mem/
+.agent/
 .agents/
+.brainsync/
+.cursor/
+.vscode/
+.mcp.*
+.windsurfrules
