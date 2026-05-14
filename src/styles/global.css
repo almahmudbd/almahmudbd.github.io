@@ -585,6 +585,10 @@ img {
   border-bottom: 0.5px solid var(--color-border);
 }
 
+.how-item:last-child {
+  border-bottom: none;
+}
+
 .how-num {
   font-size: 15px;
   font-weight: 500;
@@ -853,17 +857,7 @@ img {
   border: 0.5px solid var(--color-border);
 }
 
-.badge-live {
-  background: rgba(239, 68, 68, 0.1);
-  color: #ef4444;
-  border-color: rgba(239, 68, 68, 0.2);
-}
 
-.badge-new {
-  background: rgba(59, 130, 246, 0.1);
-  color: #3b82f6;
-  border-color: rgba(59, 130, 246, 0.2);
-}
 
 .course-title {
   font-size: 19px;
