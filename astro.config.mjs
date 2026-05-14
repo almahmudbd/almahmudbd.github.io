@@ -4,6 +4,14 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://almahmudbd.github.io/',
+  vite: {
+    server: {
+      host: true,
+      allowedHosts: [
+        "almahmud.pro.bd"
+      ]
+    }
+  },
   redirects: {
     '/consulting': '/appointment',
     '/blog': '/social',

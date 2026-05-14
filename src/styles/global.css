@@ -1238,9 +1238,9 @@ img {
 }
 
 .activism-platform {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
 }
 
 .activism-stat {
@@ -1252,7 +1252,8 @@ img {
 .activism-desc {
   font-size: 15px;
   color: var(--color-text-secondary);
-  line-height: 1.65;
+  line-height: 1.55;
+  margin-bottom: 0.9rem;
 }
 
 /* ─── Online Box / Special Boxes ─────────────────────── */
