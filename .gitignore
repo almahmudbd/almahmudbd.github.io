@@ -33,3 +33,5 @@ CLAUDE.md
 .vscode/
 .mcp.*
 .windsurfrules
+# Auto-generated agent rules (personalized per developer)
+.brainsync/agent-rules.md
