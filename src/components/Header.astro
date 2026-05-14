@@ -4,7 +4,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 ---
 <header class="nav" role="banner">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">almahmud</a>
+    <a href="/" class="nav-logo"><i class="ti ti-home" aria-hidden="true" style="margin-right: 4px;"></i>almahmud</a>
     
     <div class="nav-actions">
       <button class="theme-toggle" id="theme-toggle" aria-label="ডার্ক মোড">
@@ -18,7 +18,7 @@ const currentPath = pathname.slice(1); // remove the first "/"
 
     <nav aria-label="প্রধান নেভিগেশন">
       <ul class="nav-links" id="nav-links">
-        <li><a href="/blog" class={pathname === "/blog" || pathname === "/blog/" ? "active" : ""}>ব্লগ</a></li>
+        <li><a href="/social" class={pathname === "/social" || pathname === "/social/" ? "active" : ""}>সোশ্যাল</a></li>
         <li><a href="/projects" class={pathname === "/projects" || pathname === "/projects/" ? "active" : ""}>প্রজেক্ট</a></li>
         <li><a href="/ruqyah" class={pathname === "/ruqyah" || pathname === "/ruqyah/" ? "active" : ""}>রুকইয়াহ</a></li>
       </ul>

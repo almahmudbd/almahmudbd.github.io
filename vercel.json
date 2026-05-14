@@ -2,6 +2,31 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/consulting",
+      "destination": "/appointment",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/social",
+      "permanent": true
+    },
+    {
+      "source": "/serial",
+      "destination": "/appointment",
+      "permanent": false
+    },
+    {
+      "source": "/consult",
+      "destination": "/appointment",
+      "permanent": false
+    },
+    {
+      "source": "/raqilist",
+      "destination": "https://amarbokbok.vercel.app/blogs/raqilist",
+      "permanent": false
+    },
+    {
       "source": "/fb",
       "destination": "https://www.facebook.com/almahmud1234",
       "permanent": false
