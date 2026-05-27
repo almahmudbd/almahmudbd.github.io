@@ -21,5 +21,6 @@ export default defineConfig({
     '/fb': 'https://www.facebook.com/almahmud1234',
     '/page': 'https://www.facebook.com/thealmahmud2',
     '/yt': 'https://youtube.com/c/thealmahmud',
+    '/anon': 'https://docs.google.com/forms/d/e/1FAIpQLSe8QE1-3CKVpvqtFWaCvzTDSS43Mt8B15HGCQQ_Sv2g-1tH9w/viewform',
   }
 });
