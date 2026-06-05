@@ -45,6 +45,36 @@ const { title, description = "আব্দুল্লাহ আল মাহম
 			</div>
 		</main>
 		<Footer />
+
+		<script>
+			// Scroll Reveal Animation Script
+			document.addEventListener('DOMContentLoaded', () => {
+				const observerOptions = {
+					root: null,
+					rootMargin: '0px 0px -40px 0px',
+					threshold: 0.05
+				};
+
+				const observer = new IntersectionObserver((entries, obs) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('revealed');
+							obs.unobserve(entry.target);
+						}
+					});
+				}, observerOptions);
+
+				// Target elements to apply scroll reveal animation
+				const revealTargets = document.querySelectorAll(
+					'.page-heading, .page-sub, .notice-box, .section-label, .card, .project-card, .course-card, .book-card-wrap, .platform-card, .activism-card, .cta-box, .online-box, .syllabus-grid, .faq-item, .shops-grid, .social-mini-grid, .divider'
+				);
+
+				revealTargets.forEach(target => {
+					target.classList.add('reveal');
+					observer.observe(target);
+				});
+			});
+		</script>
 	</body>
 </html>
 
