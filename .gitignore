@@ -35,3 +35,6 @@ CLAUDE.md
 .windsurfrules
 # Auto-generated agent rules (personalized per developer)
 .brainsync/agent-rules.md
+
+# Auto-generated AI agent exclusions
+.kiro/
